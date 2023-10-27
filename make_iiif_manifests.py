@@ -115,7 +115,7 @@ def to_collection(
                 c,
                 base_url,
                 target_dir,
-                prefix=prefix or i.code + "/",
+                prefix=collection_filename.replace(".json", "/"),
                 base_url_manifests=base_url_manifests,
                 use_filegroup=use_filegroup,
             )
@@ -126,14 +126,14 @@ def to_collection(
                     c,
                     base_url_manifests,
                     target_dir,
-                    prefix=prefix or i.code + "/",
+                    prefix=collection_filename.replace(".json", "/"),
                 )
             else:
                 sub_part = to_collection(
                     c,
                     base_url,
                     target_dir,
-                    prefix=prefix or i.code + "/",
+                    prefix=collection_filename.replace(".json", "/"),
                     base_url_manifests=base_url_manifests,
                     use_filegroup=use_filegroup,
                 )
@@ -144,7 +144,7 @@ def to_collection(
                     c,
                     base_url_manifests,
                     target_dir,
-                    prefix=prefix or i.code + "/",
+                    prefix=collection_filename.replace(".json", "/"),
                 )
             else:
                 sub_part = to_manifest(
