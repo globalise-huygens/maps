@@ -1,6 +1,7 @@
 import json
 import os
 from dataclasses import dataclass, field
+from itertools import count
 
 import iiif_prezi3
 import requests
@@ -43,7 +44,6 @@ class Collection(Base):
         """
         for i in self.hasPart:
             if use_filegroup and isinstance(i, FileGroup):
-                print(i.code)
                 yield i
             elif isinstance(i, File):
                 yield i
@@ -220,16 +220,55 @@ def to_manifest(
         rights=license_uri,
     )
 
-    scans = []
-    metadata_list = []
+    ranges = []  # {"scans": [], "metadata": [], "code": "", "title": ""}
 
     # Get scan-URIs from GAF
     if isinstance(i, FileGroup):
-        for f in i.files():
-            scans += get_scans(f.metsid)
+        for f in i.files(use_filegroup=True):
+            # Is it a filegrp with filegrps? Then we need a range
+            if isinstance(f, FileGroup):
+                range_code = f.code
+                range_title = f.title
 
-            for _ in scans:
-                metadata_list.append(
+                scans = []
+                metadata = []
+
+                for f2 in f.files():
+                    scans += get_scans(f2.metsid)
+                    metadata += [
+                        [
+                            iiif_prezi3.KeyValueString(
+                                label="Identifier",
+                                value={"en": [f2.code]},
+                            ),
+                            iiif_prezi3.KeyValueString(
+                                label="Title",
+                                value={"en": [f2.title]},
+                            ),
+                            iiif_prezi3.KeyValueString(
+                                label="Date",
+                                value={"en": [f2.date or "?"]},
+                            ),
+                            iiif_prezi3.KeyValueString(
+                                label="Permalink",
+                                value={"en": [f'<a href="{f2.uri}">{f2.uri}</a>']},
+                            ),
+                        ]
+                        for _ in scans
+                    ]
+
+                ranges.append(
+                    {
+                        "scans": scans,
+                        "metadata": metadata,
+                        "code": range_code,
+                        "title": range_title,
+                    }
+                )
+
+            else:
+                scans = get_scans(f.metsid)
+                metadata = [
                     [
                         iiif_prezi3.KeyValueString(
                             label="Identifier",
@@ -248,33 +287,81 @@ def to_manifest(
                             value={"en": [f'<a href="{f.uri}">{f.uri}</a>']},
                         ),
                     ]
+                    for _ in scans
+                ]
+
+                ranges.append(
+                    {
+                        "scans": scans,
+                        "metadata": metadata,
+                        "code": "",
+                        "title": "",
+                    }
                 )
 
     else:
-        scans += get_scans(i.metsid)
-        for _ in scans:
-            metadata_list.append([])  # trick for zip
+        scans = get_scans(i.metsid)
+        metadata = [[] for _ in scans]
 
-    if not scans:
-        return None
-
-    # Add scans
-    for n, ((file_name, iiif_service_info), metadata) in enumerate(
-        zip(scans, metadata_list), 1
-    ):
-        if file_name.endswith((".tif", ".tiff", ".jpg", ".jpeg")):
-            base_file_name = file_name.rsplit(".", 1)[0]
-        else:
-            base_file_name = file_name
-
-        manifest.make_canvas_from_iiif(
-            url=iiif_service_info,
-            id=f"{manifest_id}/canvas/p{n}",
-            label=base_file_name,
-            anno_id=f"{manifest_id}/canvas/p{n}/anno",
-            anno_page_id=f"{manifest_id}/canvas/p{n}/annotationpage",
-            metadata=metadata,
+        ranges.append(
+            {
+                "scans": scans,
+                "metadata": metadata,
+                "code": "",
+                "title": "",
+            }
         )
+
+    canvas_counter = count(0)
+    for nr, r in enumerate(ranges):
+        # range_id = f"{manifest_id}/range/r{nr}"
+        # range_label = f"{r['code']} - {r['title']}"
+        # range = manifest.make_range(
+        #     id=range_id,
+        #     label=range_label,
+        # )
+
+        #     manifest.add_range(range)
+
+        if r["code"]:
+            make_range = True
+
+            range = manifest.make_range(
+                id=f"{manifest_id}/range/r{nr}",
+                label=f"{r['code']} - {r['title']}",
+            )
+        else:
+            make_range = False
+
+        # Add scans
+        for (file_name, iiif_service_info), metadata in zip(r["scans"], r["metadata"]):
+            if file_name.endswith((".tif", ".tiff", ".jpg", ".jpeg")):
+                base_file_name = file_name.rsplit(".", 1)[0]
+            else:
+                base_file_name = file_name
+
+            n = next(canvas_counter)
+            canvas_id = f"{manifest_id}/canvas/p{n}"
+            manifest.make_canvas_from_iiif(
+                url=iiif_service_info,
+                id=canvas_id,
+                label=base_file_name,
+                anno_id=f"{manifest_id}/canvas/p{n}/anno",
+                anno_page_id=f"{manifest_id}/canvas/p{n}/annotationpage",
+                metadata=metadata,
+            )
+
+            if make_range:
+                range.add_item(
+                    iiif_prezi3.Reference(
+                        id=canvas_id,
+                        label=base_file_name,
+                        type="Canvas",
+                    )
+                )  # shallow only
+
+    if next(canvas_counter) == 0:
+        return  # empty manifests are not useful
 
     os.makedirs(
         os.path.join(target_dir, os.path.dirname(manifest_filename)), exist_ok=True
