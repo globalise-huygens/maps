@@ -98,6 +98,9 @@ def normalize_id(s: str) -> str:
 
     s = "".join([c for c in s if c.isalnum() or c in "-."])
 
+    while "--" in s:
+        s = s.replace("--", "-")
+
     return s
 
 
@@ -346,8 +349,8 @@ def to_manifest(
                     {
                         "scans": scans,
                         "metadata": metadata,
-                        "code": "",
-                        "title": "",
+                        "code": f.code,
+                        "title": f.title,
                     }
                 )
 
@@ -531,7 +534,7 @@ def get_filegrp(filegrp_el, filter_codes: set = set()) -> FileGroup:
         filegrp_title = filegrp_title.replace("  ", " ")
 
     if filegrp_code == "div.nrs.":
-        filegrp_code = f"{filegrp_code}-{normalize_title(filegrp_title)}"
+        filegrp_code += normalize_title(filegrp_title)
 
     # Date
     date_el = filegrp_el.find("did/unitdate")
@@ -644,8 +647,8 @@ if __name__ == "__main__":
     # Inventories
     main(
         ead_file_path="data/NA/ead/4.TOPO.xml",
-        base_url_manifests="https://data.globalise.huygens.knaw.nl/maps/",
-        base_url_collections="https://data.globalise.huygens.knaw.nl/maps/",
+        base_url_manifests="https://data.globalise.huygens.knaw.nl/manifests/maps/",
+        base_url_collections="https://data.globalise.huygens.knaw.nl/manifests/maps/",
         target_dir="iiif/",
         use_filegroup=True,
     )
