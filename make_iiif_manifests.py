@@ -2,6 +2,7 @@ import json
 import os
 from dataclasses import dataclass, field
 from itertools import count
+from unidecode import unidecode
 
 import iiif_prezi3
 import requests
@@ -73,6 +74,58 @@ class File(Base):
     metsid: str
 
 
+def normalize_id(s: str) -> str:
+    """
+    Normalize an identifier so that it can be used in a URI.
+
+    This function replaces white spaces, apostrophes, slashes
+    and colons with a dash. It also removes all non-alphanumeric
+    characters except for a dot and a dash.
+
+    Args:
+        s (str): Identifier to normalize.
+
+    Returns:
+        str: Normalized identifier.
+
+    >>> normalize_id("7.27A, 7.37A")
+    '7.27A-7.37A'
+    """
+    s = s.replace(" ", "-")
+    s = s.replace("'", "-")
+    s = s.replace("/", "-")
+    s = s.replace(":", "-")
+
+    s = "".join([c for c in s if c.isalnum() or c in "-."])
+
+    return s
+
+
+def normalize_title(s: str) -> str:
+    """
+    Normalize a title so that it can be used in a URI.
+
+    This function can be used when no identifier is available.
+    It substitutes any diacritics in a title and converts it
+    to lowercase. The same normalization as in normalize_id
+    is applied.
+
+    Args:
+        s (str): Title to normalize.
+
+    Returns:
+        str: Normalized title.
+
+    >>> normalize_title("Condé-sur-l'Escaut")
+    'conde-sur-l-escaut'
+    """
+    s = normalize_id(s)
+
+    s = unidecode(s).lower().strip()
+
+    return s
+
+
 def to_collection(
     i: Fonds | Series | FileGroup,
     base_url: str,
@@ -82,7 +135,6 @@ def to_collection(
     use_filegroup: bool = False,
 ):
     collection_filename = f"{prefix}{i.code}.json"
-    collection_filename = collection_filename.replace(" ", "+")
     collection_id = base_url + collection_filename
 
     dirname = os.path.dirname(collection_filename)
@@ -181,7 +233,6 @@ def to_manifest(
     print("Making manifest for", i.__class__.__name__, i.code)
 
     manifest_filename = f"{prefix}{i.code}.json"
-    manifest_filename = manifest_filename.replace(" ", "+")
     manifest_id = base_url + manifest_filename
 
     # If file already exists, skip
@@ -234,7 +285,8 @@ def to_manifest(
                 metadata = []
 
                 for f2 in f.files():
-                    scans += get_scans(f2.metsid)
+                    new_scans = get_scans(f2.metsid)
+                    scans += new_scans
                     metadata += [
                         [
                             iiif_prezi3.KeyValueString(
@@ -254,7 +306,7 @@ def to_manifest(
                                 value={"en": [f'<a href="{f2.uri}">{f2.uri}</a>']},
                             ),
                         ]
-                        for _ in scans
+                        for _ in new_scans
                     ]
 
                 ranges.append(
@@ -312,17 +364,8 @@ def to_manifest(
             }
         )
 
-    canvas_counter = count(0)
-    for nr, r in enumerate(ranges):
-        # range_id = f"{manifest_id}/range/r{nr}"
-        # range_label = f"{r['code']} - {r['title']}"
-        # range = manifest.make_range(
-        #     id=range_id,
-        #     label=range_label,
-        # )
-
-        #     manifest.add_range(range)
-
+    canvas_counter = count(1)
+    for nr, r in enumerate(ranges, 1):
         if r["code"]:
             make_range = True
 
@@ -342,6 +385,8 @@ def to_manifest(
 
             n = next(canvas_counter)
             canvas_id = f"{manifest_id}/canvas/p{n}"
+
+            print("Making canvas for", iiif_service_info)
             manifest.make_canvas_from_iiif(
                 url=iiif_service_info,
                 id=canvas_id,
@@ -359,7 +404,7 @@ def to_manifest(
                     )
                 )  # shallow only
 
-    if next(canvas_counter) == 0:
+    if next(canvas_counter) == 1:
         return  # empty manifests are not useful
 
     os.makedirs(
@@ -443,11 +488,9 @@ def get_series(series_el, filter_codes: set = set()) -> Series:
         series_title = series_title.replace("  ", " ")
 
     if series_code_el is not None:
-        series_code = series_code_el.text
+        series_code = normalize_id(series_code_el.text)
     else:
-        series_code = series_title.strip()
-
-    series_code = series_code.replace("/", "-")
+        series_code = normalize_title(series_title)
 
     s = Series(code=series_code, title=series_title)
 
@@ -480,13 +523,15 @@ def get_file_and_filegrp_els(series_el, filter_codes: set = set()):
 
 
 def get_filegrp(filegrp_el, filter_codes: set = set()) -> FileGroup:
-    filegrp_code = filegrp_el.find("did/unitid").text
-    filegrp_code = filegrp_code.replace("/", "-")
+    filegrp_code = normalize_id(filegrp_el.find("did/unitid").text)
 
     # Title
     filegrp_title = "".join(filegrp_el.find("did/unittitle").itertext()).strip()
     while "  " in filegrp_title:  # double space
         filegrp_title = filegrp_title.replace("  ", " ")
+
+    if filegrp_code == "div.nrs.":
+        filegrp_code = f"{filegrp_code}-{normalize_title(filegrp_title)}"
 
     # Date
     date_el = filegrp_el.find("did/unitdate")
