@@ -444,9 +444,10 @@ def get_series(series_el, filter_codes: set = set()) -> Series:
 
     if series_code_el is not None:
         series_code = series_code_el.text
-        series_code = series_code.replace("/", "-")
     else:
-        series_code = series_title
+        series_code = series_title.strip()
+
+    series_code = series_code.replace("/", "-")
 
     s = Series(code=series_code, title=series_title)
 
