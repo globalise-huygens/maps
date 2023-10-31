@@ -355,7 +355,6 @@ def to_manifest(
                 range.add_item(
                     iiif_prezi3.Reference(
                         id=canvas_id,
-                        label=base_file_name,
                         type="Canvas",
                     )
                 )  # shallow only
