@@ -414,6 +414,8 @@ def to_manifest(
                         anno_page_id=f"{manifest_id}/canvas/p{n}/annotationpage",
                         metadata=metadata,
                     )
+                else:
+                    raise e
 
             if make_range:
                 range.add_item(
