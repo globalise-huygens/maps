@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Map collection - GLOBALISE</title>
+  </head>
+  <body>
+    <div id="osd-mirador"></div>
+
+    <script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script>
+    <script>
+      const getURL = () => {
+        let hashValue = window.location.hash.slice(1);
+        let url = hashValue.split(",")[1];
+        return url;
+      };
+
+      const defaultCollection = null;
+
+      const toLoad = getURL() || defaultCollection;
+
+      const openedWindows = toLoad
+        ? [
+            {
+              loadedManifest: toLoad,
+              canvasIndex: 0,
+              thumbnailNavigationPosition: "far-bottom",
+            },
+          ]
+        : [];
+
+      var mirador = Mirador.viewer({
+        id: "osd-mirador",
+        manifests: [],
+        windows: openedWindows,
+        catalog: [
+          {
+            manifestId:
+              "https://data.globalise.huygens.knaw.nl/manifests/maps/2.13.167.json",
+          },
+          {
+            manifestId:
+              "https://data.globalise.huygens.knaw.nl/manifests/maps/4.ASB.json",
+          },
+          {
+            manifestId:
+              "https://data.globalise.huygens.knaw.nl/manifests/maps/4.MIKO.json",
+          },
+          {
+            manifestId:
+              "https://data.globalise.huygens.knaw.nl/manifests/maps/4.TOPO.json",
+          },
+          {
+            manifestId:
+              "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL.json",
+          },
+          {
+            manifestId:
+              "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VELH.json",
+          },
+          {
+            manifestId:
+              "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VTH.json",
+          },
+          {
+            manifestId:
+              "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VTHR.json",
+          }
+        ],
+      });
+    </script>
+  </body>
+</html>
