@@ -312,14 +312,15 @@ def to_manifest(
                         for _ in new_scans
                     ]
 
-                ranges.append(
-                    {
-                        "scans": scans,
-                        "metadata": metadata,
-                        "code": range_code,
-                        "title": range_title,
-                    }
-                )
+                if scans:
+                    ranges.append(
+                        {
+                            "scans": scans,
+                            "metadata": metadata,
+                            "code": range_code,
+                            "title": range_title,
+                        }
+                    )
 
             else:
                 scans = get_scans(f.metsid)
@@ -345,27 +346,29 @@ def to_manifest(
                     for _ in scans
                 ]
 
-                ranges.append(
-                    {
-                        "scans": scans,
-                        "metadata": metadata,
-                        "code": f.code,
-                        "title": f.title,
-                    }
-                )
+                if scans:
+                    ranges.append(
+                        {
+                            "scans": scans,
+                            "metadata": metadata,
+                            "code": f.code,
+                            "title": f.title,
+                        }
+                    )
 
     else:
         scans = get_scans(i.metsid)
         metadata = [[] for _ in scans]
 
-        ranges.append(
-            {
-                "scans": scans,
-                "metadata": metadata,
-                "code": "",
-                "title": "",
-            }
-        )
+        if scans:
+            ranges.append(
+                {
+                    "scans": scans,
+                    "metadata": metadata,
+                    "code": "",  # Structure not needed here
+                    "title": "",
+                }
+            )
 
     canvas_counter = count(1)
     for nr, r in enumerate(ranges, 1):
@@ -390,14 +393,27 @@ def to_manifest(
             canvas_id = f"{manifest_id}/canvas/p{n}"
 
             print("Making canvas for", iiif_service_info)
-            manifest.make_canvas_from_iiif(
-                url=iiif_service_info,
-                id=canvas_id,
-                label=base_file_name,
-                anno_id=f"{manifest_id}/canvas/p{n}/anno",
-                anno_page_id=f"{manifest_id}/canvas/p{n}/annotationpage",
-                metadata=metadata,
-            )
+            try:
+                manifest.make_canvas_from_iiif(
+                    url=iiif_service_info,
+                    id=canvas_id,
+                    label=base_file_name,
+                    anno_id=f"{manifest_id}/canvas/p{n}/anno",
+                    anno_page_id=f"{manifest_id}/canvas/p{n}/annotationpage",
+                    metadata=metadata,
+                )
+            except requests.exceptions.HTTPError as e:
+                if e.response.status_code == 404:
+                    print("404 error, skipping")
+
+                    # Add placeholder canvas (empty)
+                    manifest.make_canvas(
+                        id=canvas_id,
+                        label=base_file_name,
+                        anno_id=f"{manifest_id}/canvas/p{n}/anno",
+                        anno_page_id=f"{manifest_id}/canvas/p{n}/annotationpage",
+                        metadata=metadata,
+                    )
 
             if make_range:
                 range.add_item(
@@ -559,9 +575,9 @@ def get_file(file_el, filter_codes: set = set()) -> File | None:
     did = file_el.find("did")
 
     # Inventory number
-    inventorynumber_el = did.find("unitid[@identifier]")
-    if inventorynumber_el is not None:
-        inventorynumber = inventorynumber_el.text
+    inventorynumber_el = did.xpath("unitid[@identifier or @type='BD']")
+    if inventorynumber_el:
+        inventorynumber = inventorynumber_el[0].text
     else:
         return None
 
@@ -649,6 +665,6 @@ if __name__ == "__main__":
         ead_file_path="data/NA/ead/4.TOPO.xml",
         base_url_manifests="https://data.globalise.huygens.knaw.nl/manifests/maps/",
         base_url_collections="https://data.globalise.huygens.knaw.nl/manifests/maps/",
-        target_dir="iiif/",
+        target_dir="maps/",
         use_filegroup=True,
     )
