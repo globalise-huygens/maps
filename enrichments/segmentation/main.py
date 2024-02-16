@@ -15,7 +15,7 @@ DEVICE = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 # Thresholds
 IOU = 0.9
-STABILITY = 0.75
+STABILITY = 0.8
 AREA_THRESHOLD = 100
 BORDER_THRESHOLD = 0
 
@@ -67,8 +67,11 @@ def process_image(
 
         # bbox coords
         r_x1, r_y1, r_w, r_h = r["bbox"]
-        r_x2 = r_x1 + r_w
-        r_y2 = r_y1 + r_h
+
+        r_x1 = int(r_x1)
+        r_x2 = r_x1 + int(r_w)
+        r_y1 = int(r_y1)
+        r_y2 = r_y1 + int(r_h)
 
         if (  # Check if the object is too close to the border of the cutout
             r_x1 <= border_threshold
@@ -150,6 +153,9 @@ def main(
             f"{output_folder}/{image_name_without_extension}.json", "w"
         ) as outfile:
             json.dump(data, outfile, indent=1)
+
+        # TODO: deduplicate results (due to overlapping windows)
+        # TODO: merge or cluster overlapping results (IOU)
 
 
 if __name__ == "__main__":
