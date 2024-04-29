@@ -1,3 +1,4 @@
+import os
 import json
 import requests
 from collections import defaultdict
@@ -10,8 +11,9 @@ import numpy as np
 
 Image.MAX_IMAGE_PIXELS = None  # Disable DecompressionBombError
 
-MINIMUM_WIDTH = 25
+MINIMUM_WIDTH = 35
 MINIMUM_HEIGHT = 25
+# import pytesseract
 
 
 def parse_iiif_prezi(iiif_prezi_id, manifest2canvas=dict()):
@@ -90,10 +92,17 @@ def parse_annotation_page(annotation_page_id):
     return annotation2svg
 
 
-def extract_snippets(image_uuid, annotations):
+def extract_snippets(image_uuid, annotations, folder="snippets"):
 
-    image = Image.open(f"/media/leon/HDE0069/GLOBALISE/maps/download/{image_uuid}.jpg")
+    image = Image.open(os.path.join(IMAGE_FOLDER, f"{image_uuid}.jpg"))
     # image = cv2.imread(f"/media/leon/HDE0069/GLOBALISE/maps/download/{image_uuid}.jpg")
+
+    snippets_image_folder = os.path.join(folder, image_uuid)
+    os.makedirs(snippets_image_folder, exist_ok=True)
+
+    snippets = []
+
+    print(f"Extracting snippets from {image_uuid}...")
 
     for annotation_id, svg in annotations.items():
 
@@ -132,27 +141,36 @@ def extract_snippets(image_uuid, annotations):
 
         # Save
         # cv2.imwrite(f"snippets/{annotation_id}.png", image)
-        square.save(f"snippets/{annotation_id}.png")
+        snippet_path = os.path.join(snippets_image_folder, f"{annotation_id}.png")
+        square.save(snippet_path)
+        snippets.append(snippet_path)
+
+    with open(f"{snippets_image_folder}/lines.txt", "w") as f:
+        f.write("\n".join(snippets))
 
 
 if __name__ == "__main__":
-    # manifest2canvas = parse_iiif_prezi(
-    #     "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/C/C.2/C.2.13/algemeen/1135A-1135J.json"
-    # )
 
-    # with open("manifest2canvas.json", "w") as f:
-    #     json.dump(manifest2canvas, f, indent=2)
+    IMAGE_FOLDER = "/media/leon/HDE0069/GLOBALISE/maps/download/"
 
-    # extract_snippets("f0e37c5f-2c27-4ebc-99bf-705643a8af13", None)
+    for uri in [
+        "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/A.json",
+        "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B.json",
+        "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/C.json",
+    ]:
+        manifest2canvas = parse_iiif_prezi(uri)
 
-    with open("manifest2canvas.json", "r") as f:
-        manifest2canvas = json.load(f)
+        # with open("manifest2canvas.json", "w") as f:
+        #     json.dump(manifest2canvas, f, indent=2)
 
-    for manifest_id, canvas in manifest2canvas.items():
-        for canvas_id, data in canvas.items():
-            image_uuid = data["image_uuid"]
-            annotations = data["annotations"]
+        # extract_snippets("f0e37c5f-2c27-4ebc-99bf-705643a8af13", None)
 
-            extract_snippets(image_uuid, annotations)
+        # with open("manifest2canvas.json", "r") as f:
+        #     manifest2canvas = json.load(f)
 
-            break
+        for manifest_id, canvas in manifest2canvas.items():
+            for canvas_id, data in canvas.items():
+                image_uuid = data["image_uuid"]
+                annotations = data["annotations"]
+
+                extract_snippets(image_uuid, annotations)
