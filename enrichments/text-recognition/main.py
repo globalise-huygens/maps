@@ -171,6 +171,7 @@ if __name__ == "__main__":
         for manifest_id, canvas in manifest2canvas.items():
             for canvas_id, data in canvas.items():
                 image_uuid = data["image_uuid"]
-                annotations = data["annotations"]
+                annotations = data.get("annotations", {})
 
-                extract_snippets(image_uuid, annotations)
+                if annotations:
+                    extract_snippets(image_uuid, annotations)
