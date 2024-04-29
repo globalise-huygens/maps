@@ -67,7 +67,7 @@ def parse_manifest(manifest_id):
                 if "mapkurator" in annotation_page_id:
                     annotation2svg = parse_annotation_page(annotation_page_id)
 
-                canvas2image[canvas_id]["annotations"] = annotation2svg
+                    canvas2image[canvas_id]["annotations"] = annotation2svg
 
     return canvas2image
 
