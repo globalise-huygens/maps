@@ -1,7 +1,6 @@
 import os
 import json
 import requests
-from collections import defaultdict
 
 from svgpathtools import svgstr2paths
 from PIL import Image
@@ -16,9 +15,11 @@ MINIMUM_HEIGHT = 25
 # import pytesseract
 
 
-def parse_iiif_prezi(iiif_prezi_id, manifest2canvas=dict()):
+def parse_iiif_prezi(iiif_prezi_id):
 
     print("Parsing: ", iiif_prezi_id)
+
+    canvasses = []
 
     r = requests.get(iiif_prezi_id)
     iiif_prezi = r.json()
@@ -26,25 +27,23 @@ def parse_iiif_prezi(iiif_prezi_id, manifest2canvas=dict()):
     if iiif_prezi.get("type") == "Collection":
         for i in iiif_prezi["items"]:
             if i["type"] == "Collection":
-                manifest2canvas.update(parse_iiif_prezi(i["id"], manifest2canvas))
+                canvasses += parse_iiif_prezi(i["id"], [])
             elif i["type"] == "Manifest":
-                canvas2image = parse_manifest(i["id"])
-                manifest2canvas[iiif_prezi_id] = canvas2image
+                canvasses += parse_manifest(i["id"])
     elif iiif_prezi.get("type") == "Manifest":
-        canvas2image = parse_manifest(iiif_prezi["id"])
-        manifest2canvas[iiif_prezi_id] = canvas2image
+        canvasses += parse_manifest(iiif_prezi["id"])
 
-    return manifest2canvas
+    return canvasses
 
 
 def parse_manifest(manifest_id):
 
     print("Parsing: ", manifest_id)
 
-    canvas2image = defaultdict(dict)
-
     r = requests.get(manifest_id)
     manifest = r.json()
+
+    canvasses = []
 
     for i in manifest["items"]:
 
@@ -57,8 +56,15 @@ def parse_manifest(manifest_id):
             image_service_id = i["items"][0]["items"][0]["body"]["service"][0]["@id"]
             image_uuid = image_service_id.split("/")[-1].split(".jp2")[0]
 
-            canvas2image[canvas_id]["image_service_id"] = image_service_id
-            canvas2image[canvas_id]["image_uuid"] = image_uuid
+            canvas = {
+                "id": canvas_id,
+                "image_service_id": image_service_id,
+                "image_uuid": image_uuid,
+            }
+
+            # canvas2image[canvas_id]["image_service_id"] = image_service_id
+            # canvas2image[canvas_id]["image_uuid"] = image_uuid
+            # canvas2image[canvas_id]["canvas_id"] = canvas_id
 
             for ap in i.get("annotations", []):
 
@@ -67,9 +73,11 @@ def parse_manifest(manifest_id):
                 if "mapkurator" in annotation_page_id:
                     annotation2svg = parse_annotation_page(annotation_page_id)
 
-                    canvas2image[canvas_id]["annotations"] = annotation2svg
+                    canvas["annotations"] = annotation2svg
 
-    return canvas2image
+            canvasses.append(canvas)
+
+    return canvasses
 
 
 def parse_annotation_page(annotation_page_id):
@@ -152,26 +160,26 @@ def extract_snippets(image_uuid, annotations, folder="snippets"):
 if __name__ == "__main__":
 
     IMAGE_FOLDER = "/media/leon/HDE0069/GLOBALISE/maps/download/"
+    SNIPPET_FOLDER = "snippets"
 
     for uri in [
         "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/A.json",
         "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B.json",
         "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/C.json",
     ]:
-        manifest2canvas = parse_iiif_prezi(uri)
+        canvasses = parse_iiif_prezi(uri)
 
-        # with open("manifest2canvas.json", "w") as f:
-        #     json.dump(manifest2canvas, f, indent=2)
+        # with open("canvasses.json", "w") as f:
+        #     json.dump(canvasses, f, indent=2)
 
         # extract_snippets("f0e37c5f-2c27-4ebc-99bf-705643a8af13", None)
 
-        # with open("manifest2canvas.json", "r") as f:
-        #     manifest2canvas = json.load(f)
+        # with open("canvasses.json", "r") as f:
+        #     canvasses = json.load(f)
 
-        for manifest_id, canvas in manifest2canvas.items():
-            for canvas_id, data in canvas.items():
-                image_uuid = data["image_uuid"]
-                annotations = data.get("annotations", {})
+        for canvas in canvasses:
+            image_uuid = canvas["image_uuid"]
+            annotations = canvas.get("annotations", {})
 
-                if annotations:
-                    extract_snippets(image_uuid, annotations)
+            if annotations:
+                extract_snippets(image_uuid, annotations, SNIPPET_FOLDER)
