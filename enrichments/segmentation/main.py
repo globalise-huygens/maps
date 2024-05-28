@@ -1,4 +1,5 @@
 import os
+import uuid
 import json
 from itertools import count
 
@@ -9,7 +10,8 @@ from pycocotools import mask as mask_utils
 
 from PIL import Image
 import numpy as np
-import cv2
+
+# import cv2
 
 Image.MAX_IMAGE_PIXELS = None  # Disable DecompressionBombError
 
@@ -52,7 +54,7 @@ def get_resized_images(image: Image, window_size: int, resize_factor: int = 2):
     n = 0
     while width > window_size or height > window_size:
 
-        # if n < 5:
+        # if n < 1:
         #     n += 1
         #     continue
 
@@ -96,7 +98,7 @@ def process_image(
     mask_generator: SamAutomaticMaskGenerator,
     output_folder: str = "",
     border_threshold: int = BORDER_THRESHOLD,
-    file_prefix: str = "",
+    folder_prefix: str = "",
 ):
 
     f_i = 1 / resize_factor
@@ -117,16 +119,21 @@ def process_image(
     width -= 1
     height -= 1
 
+    print(f"Processing cutout {data['x']}x{data['y']}")
+
     # original image crop
     original_image_crop = original_image.crop(
         (data["x"], data["y"], data["x"] + data["width"], data["y"] + data["height"])
     )
+    original_image_crop_rgba = original_image_crop.convert("RGBA")
 
     results = mask_generator.generate(np.array(image))
 
     for r in results:
 
         del r["crop_box"]
+
+        r["uuid"] = uuid.uuid4()
 
         # bbox coords
         r_x1, r_y1, r_w, r_h = r["bbox"]
@@ -156,13 +163,13 @@ def process_image(
         # # Transform according to the resize factor
         # m = cv2.resize(m, None, fx=f_i, fy=f_i)
         m = Image.fromarray(m, "L").resize(
-            (int((width + 1) * f_i), int((height + 1) * f_i)), Image.Resampling.NEAREST
+            (int((width + 1) * f_i), int((height + 1) * f_i)), Image.Resampling.LANCZOS
         )
 
         # Transform the coordinates to the original image's size
         r["bbox"] = [  # bbox
-            int((r_x1 + x) * f_i),
-            int((r_y1 + y) * f_i),
+            int(r_x1 * f_i),
+            int(r_y1 * f_i),
             int(r_w * f_i),
             int(r_h * f_i),
         ]
@@ -192,6 +199,9 @@ def process_image(
         if output_folder:
             mask = mask_utils.decode(r["segmentation"])
 
+            output_folder_prefix = os.path.join(output_folder, folder_prefix)
+            os.makedirs(output_folder_prefix, exist_ok=True)
+
             # cv2
             # image_rgba = np.array(image.convert("RGBA"))
 
@@ -201,18 +211,24 @@ def process_image(
             # cutout = masked_image[r_y1:r_y2, r_x1:r_x2]  # bbox
             # cutout = cv2.cvtColor(cutout, cv2.COLOR_BGR2RGBA)
 
-            # cv2.imwrite(f"{output_folder}/{file_prefix}{next(n)}.png", cutout)
+            # cv2.imwrite(os.path.join(output_folder_prefix, f"{r['uuid']}.png"))", cutout)
 
             ## PIL
-            image_rgba = original_image_crop.convert("RGBA")
-            masked_image_array = np.array(image_rgba)
+            masked_image_array = np.array(original_image_crop_rgba)
 
             masked_image_array[:, :, 3] = mask * 255  # alpha channel
             masked_image = Image.fromarray(masked_image_array, "RGBA")
 
+            r_x1, r_y1, r_w, r_h = r["bbox"]
+
+            r_x1 = int(r_x1)
+            r_x2 = r_x1 + int(r_w)
+            r_y1 = int(r_y1)
+            r_y2 = r_y1 + int(r_h)
+
             cutout = masked_image.crop((r_x1, r_y1, r_x2, r_y2))  # bbox
 
-            cutout.save(f"{output_folder}/{file_prefix}{next(n)}.png")
+            cutout.save(os.path.join(output_folder_prefix, f"{r['uuid']}.png"))
 
     return data
 
@@ -275,7 +291,7 @@ def main(
                     resize_factor=f,
                     mask_generator=mask_generator,
                     output_folder=image_output_folder,
-                    file_prefix=f'{"%.3f" % f}_',
+                    folder_prefix=f'{"%.3f" % f}',
                 )
 
                 data["cutouts"].append(result)
