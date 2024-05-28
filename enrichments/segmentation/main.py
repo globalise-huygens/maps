@@ -7,7 +7,10 @@ from segment_anything import sam_model_registry
 from segment_anything import SamAutomaticMaskGenerator
 from pycocotools import mask as mask_utils
 
-import cv2
+from PIL import Image
+import numpy as np
+
+Image.MAX_IMAGE_PIXELS = None  # Disable DecompressionBombError
 
 MODEL = "./model/sam_vit_l_0b3195.pth"  # large model
 MODEL_TYPE = "vit_l"
@@ -22,67 +25,89 @@ BORDER_THRESHOLD = 0
 n = count()
 
 
-def get_resized_images(image, window_size, resize_factor=2):
-    image_bgr = cv2.imread(image)
-    image_rgb = cv2.cvtColor(image_bgr, cv2.COLOR_BGR2RGB)
-    height, width, _ = image_bgr.shape
+def get_resized_images(image: Image, window_size: int, resize_factor: int = 2):
+    # image_bgr = cv2.imread(image)
+    # image_rgb = cv2.cvtColor(image_bgr, cv2.COLOR_BGR2RGB)
 
-    # Let's make sure the image's size is divisible by 2
-    if height % 2 != 0:
-        image_rgb = image_rgb[:-1, :, :]
-    if width % 2 != 0:
-        image_rgb = image_rgb[:, :-1, :]
+    width, height = image.size
+
+    # height, width, _ = image_bgr.shape
+
+    # Let's make sure the image's size is divisible by the resize factor,
+    # then we can easily resize the image and transpose the masks. This works by cropping.
+    while height % resize_factor != 0:
+        image = image.crop((0, 0, width, height - 1))
+        # image_rgb = image_rgb[:-1, :, :]
+        height -= 1
+
+    while width % resize_factor != 0:
+        image = image.crop((0, 0, width - 1, height))
+        # image_rgb = image_rgb[:, :-1, :]
+        width -= 1
 
     # Get a minimum factor to resize the image to the window size
     f_min = min(window_size / width, window_size / height)
 
     n = 0
     while width > window_size or height > window_size:
+
+        # if n < 5:
+        #     n += 1
+        #     continue
+
+        print(f"The image was {width}x{height}, ", end="")
+
         f = max(f_min, resize_factor**-n)
 
-        resized_image = cv2.resize(image_rgb, None, fx=f, fy=f)
+        # resized_image = cv2.resize(image_rgb, None, fx=f, fy=f)
+        resized_image = image.resize(
+            (int(width * f), int(height * f)), Image.Resampling.LANCZOS
+        )
 
         n += 1
-        height, width, _ = resized_image.shape
+        width, height = resized_image.size
 
-        print(f"The image was {width}x{height}, resizing to {f*100}%: {width}x{height}")
+        print(f"resizing to {f*100}%: {width}x{height}")
         yield f, resized_image
 
 
-def get_image_cutouts(image, window_size, step_size):
-    height, width, _ = image.shape
+def get_image_cutouts(image: Image, window_size: int, step_size: int):
+    width, height = image.size
 
     # rolling window
     for y in range(0, height, step_size):
         for x in range(0, width, step_size):
-            cropped_image_rgb = image[y : y + window_size, x : x + window_size]
+            # cropped_image = image[y : y + window_size, x : x + window_size]
 
-            yield x, y, cropped_image_rgb
+            cropped_image = image.crop((x, y, x + window_size, y + window_size))
+
+            yield x, y, cropped_image
 
 
 def process_image(
-    image,
-    x,
-    y,
-    original_width,
-    original_height,
-    resize_factor,
-    mask_generator,
-    output_folder="",
-    border_threshold=BORDER_THRESHOLD,
-    file_prefix="",
+    image: Image,
+    x: int,
+    y: int,
+    original_width: int,
+    original_height: int,
+    resize_factor: float,
+    mask_generator: SamAutomaticMaskGenerator,
+    # output_folder: str = "",
+    border_threshold: int = BORDER_THRESHOLD,
+    # file_prefix: str = "",
 ):
 
-    height, width, _ = image.shape
-    print(f"Processing {width}x{height} image")
-    image_rgba = cv2.cvtColor(image, cv2.COLOR_BGR2RGBA)
+    f_i = 1 / resize_factor
+
+    width, height = image.size
+    # image_rgba = cv2.cvtColor(image, cv2.COLOR_BGR2RGBA)
 
     data = {
-        "x": x,
-        "y": y,
+        "x": int(x * f_i),
+        "y": int(y * f_i),
         "f": resize_factor,
-        "width": width,
-        "height": height,
+        "width": int(width * f_i),
+        "height": int(height * f_i),
         "results": [],
     }
 
@@ -90,9 +115,11 @@ def process_image(
     width -= 1
     height -= 1
 
-    results = mask_generator.generate(image)
+    results = mask_generator.generate(np.array(image))
 
     for r in results:
+
+        del r["crop_box"]
 
         # bbox coords
         r_x1, r_y1, r_w, r_h = r["bbox"]
@@ -115,18 +142,54 @@ def process_image(
         ):
             continue
 
-        del r["crop_box"]
+        # Only keep the mask for the bbox
+        m = mask_utils.decode(r["segmentation"])
+        m = m[r_y1:r_y2, r_x1:r_x2]
+
+        # Transform according to the resize factor
+        # m = cv2.resize(m, None, fx=f_i, fy=f_i)
+        m = Image.fromarray(m).resize(
+            (int(width * f_i), int(height * f_i)), Image.Resampling.NEAREST
+        )
+
+        # Transform the coordinates to the original image's size
+        r["bbox"] = [  # bbox
+            int((r_x1 + x) * f_i),
+            int((r_y1 + y) * f_i),
+            int(r_w * f_i),
+            int(r_h * f_i),
+        ]
+
+        r["point_coords"] = [  # points
+            [
+                int((r[0] + x) * f_i),
+                int((r[1] + y) * f_i),
+            ]
+            for r in r["point_coords"]
+        ]
+
+        # m = mask_utils.decode(r["segmentation"])
+        # m_height, m_width = m.shape
+
+        # Transform the cutout mask to the original image's size
+        # mask = np.zeros((original_height, original_width), dtype=np.uint8)
+        # mask[y : y + m_height, x : x + m_width] = m
+
+        m_encoded = mask_utils.encode(np.asfortranarray(m))
+        m_encoded["counts"] = m_encoded["counts"].decode("utf-8")
+        r["segmentation"] = m_encoded
+
         data["results"].append(r)
 
-        if output_folder:
-            mask = mask_utils.decode(r["segmentation"])
+        # if output_folder:
+        #     mask = mask_utils.decode(r["segmentation"])
 
-            masked_image = cv2.bitwise_and(image_rgba, image_rgba, mask=mask)
-            masked_image[:, :, 3] = mask * 255  # alpha channel
+        #     masked_image = cv2.bitwise_and(image_rgba, image_rgba, mask=mask)
+        #     masked_image[:, :, 3] = mask * 255  # alpha channel
 
-            cutout = masked_image[r_y1:r_y2, r_x1:r_x2]  # bbox
+        #     cutout = masked_image[r_y1:r_y2, r_x1:r_x2]  # bbox
 
-            cv2.imwrite(f"{output_folder}/{file_prefix}{next(n)}.png", cutout)
+        #     cv2.imwrite(f"{output_folder}/{file_prefix}{next(n)}.png", cutout)
 
     return data
 
@@ -134,14 +197,14 @@ def process_image(
 def main(
     images: list,
     output_folder: str,
-    window_size=1000,  # to take VRAM into account
-    step_size=500,
-    model=MODEL,
-    model_type=MODEL_TYPE,
-    device=DEVICE,
-    iou=IOU,
-    stability=STABILITY,
-    area_threshold=AREA_THRESHOLD,
+    window_size: int = 1000,  # to take VRAM into account
+    step_size: int = 500,
+    model: str = MODEL,
+    model_type: str = MODEL_TYPE,
+    device: str = DEVICE,
+    iou: float = IOU,
+    stability: float = STABILITY,
+    area_threshold: int = AREA_THRESHOLD,
 ):
     sam = sam_model_registry[model_type](checkpoint=model)
     sam.to(device=device)
@@ -158,7 +221,12 @@ def main(
         image_name = os.path.basename(image_path)
         image_name_without_extension = os.path.splitext(image_name)[0]
 
-        height, width, _ = cv2.imread(image_path).shape
+        image_output_folder = os.path.join(output_folder, image_name_without_extension)
+        os.makedirs(image_output_folder, exist_ok=True)
+
+        # height, width, _ = cv2.imread(image_path).shape
+        image = Image.open(image_path)
+        width, height = image.size
 
         data = {
             "image": image_name,
@@ -167,7 +235,7 @@ def main(
             "cutouts": [],
         }
 
-        resized_images = get_resized_images(image_path, window_size)
+        resized_images = get_resized_images(image, window_size)
 
         for f, resized_image in resized_images:
 
@@ -182,14 +250,15 @@ def main(
                     original_width=width,
                     resize_factor=f,
                     mask_generator=mask_generator,
-                    output_folder=output_folder,
+                    output_folder=image_output_folder,
                     file_prefix=f'{"%.3f" % f}_',
                 )
 
                 data["cutouts"].append(result)
 
         with open(
-            f"{output_folder}/{image_name_without_extension}.json", "w"
+            os.path.join(image_output_folder, f"{image_name_without_extension}.json"),
+            "w",
         ) as outfile:
             json.dump(data, outfile, indent=1)
 
@@ -198,7 +267,8 @@ def main(
 
 
 if __name__ == "__main__":
+    OUTPUT_FOLDER = "./example/output"
     EXAMPLE = "./example/7beaf613-68bf-4070-b79b-bb5c9282edcd.jpg"
     images = [EXAMPLE]
 
-    main(images, "./example/output")
+    main(images, output_folder=OUTPUT_FOLDER)
