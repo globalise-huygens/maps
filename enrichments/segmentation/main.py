@@ -9,6 +9,7 @@ from pycocotools import mask as mask_utils
 
 from PIL import Image
 import numpy as np
+import cv2
 
 Image.MAX_IMAGE_PIXELS = None  # Disable DecompressionBombError
 
@@ -51,7 +52,7 @@ def get_resized_images(image: Image, window_size: int, resize_factor: int = 2):
     n = 0
     while width > window_size or height > window_size:
 
-        # if n < 5:
+        # if n < 2:
         #     n += 1
         #     continue
 
@@ -92,9 +93,9 @@ def process_image(
     original_height: int,
     resize_factor: float,
     mask_generator: SamAutomaticMaskGenerator,
-    # output_folder: str = "",
+    output_folder: str = "",
     border_threshold: int = BORDER_THRESHOLD,
-    # file_prefix: str = "",
+    file_prefix: str = "",
 ):
 
     f_i = 1 / resize_factor
@@ -143,16 +144,16 @@ def process_image(
             continue
 
         # Only keep the mask for the bbox
-        m = mask_utils.decode(r["segmentation"])
-        m = m[r_y1:r_y2, r_x1:r_x2]
+        # m = mask_utils.decode(r["segmentation"])
+        # m = m[r_y1:r_y2, r_x1:r_x2]
 
-        # Transform according to the resize factor
-        # m = cv2.resize(m, None, fx=f_i, fy=f_i)
-        m = Image.fromarray(m).resize(
-            (int(width * f_i), int(height * f_i)), Image.Resampling.NEAREST
-        )
+        # # Transform according to the resize factor
+        # # m = cv2.resize(m, None, fx=f_i, fy=f_i)
+        # m = Image.fromarray(m).resize(
+        #     (int((width + 1)), int((height + 1))), Image.Resampling.NEAREST
+        # )
 
-        # Transform the coordinates to the original image's size
+        # # Transform the coordinates to the original image's size
         r["bbox"] = [  # bbox
             int((r_x1 + x) * f_i),
             int((r_y1 + y) * f_i),
@@ -168,28 +169,43 @@ def process_image(
             for r in r["point_coords"]
         ]
 
-        # m = mask_utils.decode(r["segmentation"])
-        # m_height, m_width = m.shape
+        # # m = mask_utils.decode(r["segmentation"])
+        # # m_height, m_width = m.shape
 
-        # Transform the cutout mask to the original image's size
-        # mask = np.zeros((original_height, original_width), dtype=np.uint8)
-        # mask[y : y + m_height, x : x + m_width] = m
+        # # Transform the cutout mask to the original image's size
+        # # mask = np.zeros((original_height, original_width), dtype=np.uint8)
+        # # mask[y : y + m_height, x : x + m_width] = m
 
-        m_encoded = mask_utils.encode(np.asfortranarray(m))
-        m_encoded["counts"] = m_encoded["counts"].decode("utf-8")
-        r["segmentation"] = m_encoded
+        # m_encoded = mask_utils.encode(np.asfortranarray(m))
+        # m_encoded["counts"] = m_encoded["counts"].decode("utf-8")
+        # r["segmentation"] = m_encoded
 
         data["results"].append(r)
 
-        # if output_folder:
-        #     mask = mask_utils.decode(r["segmentation"])
+        if output_folder:
+            mask = mask_utils.decode(r["segmentation"])
 
-        #     masked_image = cv2.bitwise_and(image_rgba, image_rgba, mask=mask)
-        #     masked_image[:, :, 3] = mask * 255  # alpha channel
+            # cv2
+            # image_rgba = np.array(image.convert("RGBA"))
 
-        #     cutout = masked_image[r_y1:r_y2, r_x1:r_x2]  # bbox
+            # masked_image = cv2.bitwise_and(image_rgba, image_rgba, mask=mask)
+            # masked_image[:, :, 3] = mask * 255  # alpha channel
 
-        #     cv2.imwrite(f"{output_folder}/{file_prefix}{next(n)}.png", cutout)
+            # cutout = masked_image[r_y1:r_y2, r_x1:r_x2]  # bbox
+            # cutout = cv2.cvtColor(cutout, cv2.COLOR_BGR2RGBA)
+
+            # cv2.imwrite(f"{output_folder}/{file_prefix}{next(n)}.png", cutout)
+
+            ## PIL
+            image_rgba = image.convert("RGBA")
+            masked_image_array = np.array(image_rgba)
+
+            masked_image_array[:, :, 3] = mask * 255  # alpha channel
+            masked_image = Image.fromarray(masked_image_array, "RGBA")
+
+            cutout = masked_image.crop((r_x1, r_y1, r_x2, r_y2))  # bbox
+
+            cutout.save(f"{output_folder}/{file_prefix}{next(n)}.png")
 
     return data
 
