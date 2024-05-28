@@ -52,7 +52,7 @@ def get_resized_images(image: Image, window_size: int, resize_factor: int = 2):
     n = 0
     while width > window_size or height > window_size:
 
-        # if n < 2:
+        # if n < 5:
         #     n += 1
         #     continue
 
@@ -89,6 +89,7 @@ def process_image(
     image: Image,
     x: int,
     y: int,
+    original_image: Image,
     original_width: int,
     original_height: int,
     resize_factor: float,
@@ -115,6 +116,11 @@ def process_image(
     # start at 0
     width -= 1
     height -= 1
+
+    # original image crop
+    original_image_crop = original_image.crop(
+        (data["x"], data["y"], data["x"] + data["width"], data["y"] + data["height"])
+    )
 
     results = mask_generator.generate(np.array(image))
 
@@ -144,16 +150,16 @@ def process_image(
             continue
 
         # Only keep the mask for the bbox
-        # m = mask_utils.decode(r["segmentation"])
+        m = mask_utils.decode(r["segmentation"])
         # m = m[r_y1:r_y2, r_x1:r_x2]
 
         # # Transform according to the resize factor
-        # # m = cv2.resize(m, None, fx=f_i, fy=f_i)
-        # m = Image.fromarray(m).resize(
-        #     (int((width + 1)), int((height + 1))), Image.Resampling.NEAREST
-        # )
+        # m = cv2.resize(m, None, fx=f_i, fy=f_i)
+        m = Image.fromarray(m, "L").resize(
+            (int((width + 1) * f_i), int((height + 1) * f_i)), Image.Resampling.NEAREST
+        )
 
-        # # Transform the coordinates to the original image's size
+        # Transform the coordinates to the original image's size
         r["bbox"] = [  # bbox
             int((r_x1 + x) * f_i),
             int((r_y1 + y) * f_i),
@@ -170,15 +176,16 @@ def process_image(
         ]
 
         # # m = mask_utils.decode(r["segmentation"])
-        # # m_height, m_width = m.shape
+        # m_height, m_width = m.shape
+        # m_height, m_width = m.size
 
         # # Transform the cutout mask to the original image's size
-        # # mask = np.zeros((original_height, original_width), dtype=np.uint8)
-        # # mask[y : y + m_height, x : x + m_width] = m
+        # mask = np.zeros((original_height, original_width), dtype=np.uint8)
+        # mask[y : y + m_height, x : x + m_width] = m
 
-        # m_encoded = mask_utils.encode(np.asfortranarray(m))
-        # m_encoded["counts"] = m_encoded["counts"].decode("utf-8")
-        # r["segmentation"] = m_encoded
+        m_encoded = mask_utils.encode(np.asfortranarray(m))
+        m_encoded["counts"] = m_encoded["counts"].decode("utf-8")
+        r["segmentation"] = m_encoded
 
         data["results"].append(r)
 
@@ -197,7 +204,7 @@ def process_image(
             # cv2.imwrite(f"{output_folder}/{file_prefix}{next(n)}.png", cutout)
 
             ## PIL
-            image_rgba = image.convert("RGBA")
+            image_rgba = original_image_crop.convert("RGBA")
             masked_image_array = np.array(image_rgba)
 
             masked_image_array[:, :, 3] = mask * 255  # alpha channel
@@ -262,6 +269,7 @@ def main(
                     cutout,
                     x=x,
                     y=y,
+                    original_image=image,
                     original_height=height,
                     original_width=width,
                     resize_factor=f,
