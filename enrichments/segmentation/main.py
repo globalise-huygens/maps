@@ -25,7 +25,7 @@ STABILITY = 0.8
 AREA_THRESHOLD = 100
 BORDER_THRESHOLD = 0
 
-n = count()
+ncounter = count()
 
 
 def get_resized_images(image: Image, window_size: int, resize_factor: int = 2):
@@ -52,9 +52,12 @@ def get_resized_images(image: Image, window_size: int, resize_factor: int = 2):
     f_min = min(window_size / width, window_size / height)
 
     n = 0
+
+    original_width, original_height = width, height
+
     while width > window_size or height > window_size:
 
-        # if n < 1:
+        # if n < 2:
         #     n += 1
         #     continue
 
@@ -64,7 +67,8 @@ def get_resized_images(image: Image, window_size: int, resize_factor: int = 2):
 
         # resized_image = cv2.resize(image_rgb, None, fx=f, fy=f)
         resized_image = image.resize(
-            (int(width * f), int(height * f)), Image.Resampling.LANCZOS
+            (int(original_width * f), int(original_height * f)),
+            Image.Resampling.LANCZOS,
         )
 
         n += 1
@@ -121,11 +125,18 @@ def process_image(
 
     print(f"Processing cutout {data['x']}x{data['y']}")
 
+    # index_count = next(ncounter)
+
     # original image crop
     original_image_crop = original_image.crop(
         (data["x"], data["y"], data["x"] + data["width"], data["y"] + data["height"])
     )
     original_image_crop_rgba = original_image_crop.convert("RGBA")
+
+    # image.save(os.path.join(output_folder, f"{folder_prefix}_{index_count}.png"))
+    # original_image_crop_rgba.save(
+    #     os.path.join(output_folder, f"{folder_prefix}_{index_count}_original.png")
+    # )
 
     results = mask_generator.generate(np.array(image))
 
@@ -133,7 +144,7 @@ def process_image(
 
         del r["crop_box"]
 
-        r["uuid"] = uuid.uuid4()
+        r["uuid"] = str(uuid.uuid4())
 
         # bbox coords
         r_x1, r_y1, r_w, r_h = r["bbox"]
@@ -291,10 +302,12 @@ def main(
                     resize_factor=f,
                     mask_generator=mask_generator,
                     output_folder=image_output_folder,
-                    folder_prefix=f'{"%.3f" % f}',
+                    folder_prefix=f'{"%.4f" % f}',
                 )
 
                 data["cutouts"].append(result)
+
+                # break
 
         with open(
             os.path.join(image_output_folder, f"{image_name_without_extension}.json"),
