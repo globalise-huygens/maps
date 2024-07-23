@@ -1,0 +1,926 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://globalise-huygens.github.io/maps/manifests/v2/China_Japan.json",
+    "@type": "sc:Manifest",
+    "label": "China_Japan",
+    "viewingDirection": "left-to-right",
+    "sequences": [
+        {
+            "@type": "sc:Sequence",
+            "canvases": [
+                {
+                    "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.10/271.json/canvas/p1",
+                    "@type": "sc:Canvas",
+                    "label": "271 - Kaart van een gedeelte der Chinesche Zee en Kust, van Lamtaon tot Avarellos, met het Eiland Formosa enz.",
+                    "metadata": [
+                        {
+                            "label": "Label",
+                            "value": "NL-HaNA_4.VEL_271"
+                        },
+                        {
+                            "label": "Identifier",
+                            "value": "271"
+                        },
+                        {
+                            "label": "Title",
+                            "value": "Kaart van een gedeelte der Chinesche Zee en Kust, van Lamtaon tot Avarellos, met het Eiland Formosa enz."
+                        },
+                        {
+                            "label": "Date",
+                            "value": "1600/1700"
+                        },
+                        {
+                            "label": "Permalink",
+                            "value": "<a href=\"http://hdl.handle.net/10648/e73048f2-7815-4313-aa16-3aaff1e34270\">http://hdl.handle.net/10648/e73048f2-7815-4313-aa16-3aaff1e34270</a>"
+                        }
+                    ],
+                    "height": 17164,
+                    "width": 15052,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "resource": {
+                                "@id": "https://service.archief.nl/iipsrv?IIIF=//d7/72/1e/47/f3/4a/4f/5d/89/67/4e/e9/c6/61/c9/4b/3d18b0bb-c7bf-44d7-8dec-166f0ecbf93f.jp2/full/full/0/default.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 17164,
+                                "width": 15052,
+                                "service": {
+                                    "@context": "http://iiif.io/api/image/2/context.json",
+                                    "@id": "https://service.archief.nl/iipsrv?IIIF=//d7/72/1e/47/f3/4a/4f/5d/89/67/4e/e9/c6/61/c9/4b/3d18b0bb-c7bf-44d7-8dec-166f0ecbf93f.jp2",
+                                    "profile": "http://iiif.io/api/image/2/level2.json"
+                                }
+                            },
+                            "on": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.10/271.json/canvas/p1"
+                        }
+                    ]
+                },
+                {
+                    "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.10/272.json/canvas/p1",
+                    "@type": "sc:Canvas",
+                    "label": "272 - Kaart van een gedeelte der Chinesche Zee en Kust, van Punta Lampa cao tot de Overveens Eilanden, het Eiland Formosa enz.",
+                    "metadata": [
+                        {
+                            "label": "Label",
+                            "value": "NL-HaNA_4.VEL_272"
+                        },
+                        {
+                            "label": "Identifier",
+                            "value": "272"
+                        },
+                        {
+                            "label": "Title",
+                            "value": "Kaart van een gedeelte der Chinesche Zee en Kust, van Punta Lampa cao tot de Overveens Eilanden, het Eiland Formosa enz."
+                        },
+                        {
+                            "label": "Date",
+                            "value": "1600/1700"
+                        },
+                        {
+                            "label": "Permalink",
+                            "value": "<a href=\"http://hdl.handle.net/10648/ce7ec34f-d98d-45ac-9331-076f3eff0b6d\">http://hdl.handle.net/10648/ce7ec34f-d98d-45ac-9331-076f3eff0b6d</a>"
+                        }
+                    ],
+                    "height": 6378,
+                    "width": 8965,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "resource": {
+                                "@id": "https://service.archief.nl/iipsrv?IIIF=//b3/ce/fc/9c/c8/65/4e/38/ba/d7/c9/c8/77/21/b3/ce/2ff1c931-826d-4725-96f3-d5dff59f344e.jp2/full/full/0/default.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 6378,
+                                "width": 8965,
+                                "service": {
+                                    "@context": "http://iiif.io/api/image/2/context.json",
+                                    "@id": "https://service.archief.nl/iipsrv?IIIF=//b3/ce/fc/9c/c8/65/4e/38/ba/d7/c9/c8/77/21/b3/ce/2ff1c931-826d-4725-96f3-d5dff59f344e.jp2",
+                                    "profile": "http://iiif.io/api/image/2/level2.json"
+                                }
+                            },
+                            "on": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.10/272.json/canvas/p1"
+                        }
+                    ]
+                },
+                {
+                    "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.10/273.json/canvas/p1",
+                    "@type": "sc:Canvas",
+                    "label": "273 - Kaart van een gedeelte der Chinesche Zee en Kust, van het Eiland Heitan tot de Provintie Nankin, een gedeelte van het Eiland Formosa en de Japansche Eilanden enz.",
+                    "metadata": [
+                        {
+                            "label": "Label",
+                            "value": "NL-HaNA_4.VEL_273"
+                        },
+                        {
+                            "label": "Identifier",
+                            "value": "273"
+                        },
+                        {
+                            "label": "Title",
+                            "value": "Kaart van een gedeelte der Chinesche Zee en Kust, van het Eiland Heitan tot de Provintie Nankin, een gedeelte van het Eiland Formosa en de Japansche Eilanden enz."
+                        },
+                        {
+                            "label": "Date",
+                            "value": "1600/1700"
+                        },
+                        {
+                            "label": "Permalink",
+                            "value": "<a href=\"http://hdl.handle.net/10648/b17f6fcd-7f03-4be7-b36f-c436545bd9a5\">http://hdl.handle.net/10648/b17f6fcd-7f03-4be7-b36f-c436545bd9a5</a>"
+                        }
+                    ],
+                    "height": 6403,
+                    "width": 8956,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "resource": {
+                                "@id": "https://service.archief.nl/iipsrv?IIIF=//57/9d/10/a3/2b/3c/44/cb/bd/87/71/df/56/e1/3c/f0/2ca9492c-c561-46bc-a583-f4863adbc8bf.jp2/full/full/0/default.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 6403,
+                                "width": 8956,
+                                "service": {
+                                    "@context": "http://iiif.io/api/image/2/context.json",
+                                    "@id": "https://service.archief.nl/iipsrv?IIIF=//57/9d/10/a3/2b/3c/44/cb/bd/87/71/df/56/e1/3c/f0/2ca9492c-c561-46bc-a583-f4863adbc8bf.jp2",
+                                    "profile": "http://iiif.io/api/image/2/level2.json"
+                                }
+                            },
+                            "on": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.10/273.json/canvas/p1"
+                        }
+                    ]
+                },
+                {
+                    "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.10/274.json/canvas/p1",
+                    "@type": "sc:Canvas",
+                    "label": "274 - Kaart van een gedeelte der Chinesche Zee en Kust, van Van Kampenshoek tot de Overveens Eilanden.",
+                    "metadata": [
+                        {
+                            "label": "Label",
+                            "value": "NL-HaNA_4.VEL_274"
+                        },
+                        {
+                            "label": "Identifier",
+                            "value": "274"
+                        },
+                        {
+                            "label": "Title",
+                            "value": "Kaart van een gedeelte der Chinesche Zee en Kust, van Van Kampenshoek tot de Overveens Eilanden."
+                        },
+                        {
+                            "label": "Date",
+                            "value": "1600/1700"
+                        },
+                        {
+                            "label": "Permalink",
+                            "value": "<a href=\"http://hdl.handle.net/10648/5744f1f0-a41e-4a30-8129-b690f1ae7630\">http://hdl.handle.net/10648/5744f1f0-a41e-4a30-8129-b690f1ae7630</a>"
+                        }
+                    ],
+                    "height": 6429,
+                    "width": 8956,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "resource": {
+                                "@id": "https://service.archief.nl/iipsrv?IIIF=//8a/79/45/5b/be/be/47/37/8f/bb/1f/11/09/0b/40/8d/aca7f7d4-6644-47ef-83e8-1c2747aabe4b.jp2/full/full/0/default.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 6429,
+                                "width": 8956,
+                                "service": {
+                                    "@context": "http://iiif.io/api/image/2/context.json",
+                                    "@id": "https://service.archief.nl/iipsrv?IIIF=//8a/79/45/5b/be/be/47/37/8f/bb/1f/11/09/0b/40/8d/aca7f7d4-6644-47ef-83e8-1c2747aabe4b.jp2",
+                                    "profile": "http://iiif.io/api/image/2/level2.json"
+                                }
+                            },
+                            "on": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.10/274.json/canvas/p1"
+                        }
+                    ]
+                },
+                {
+                    "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.10/275.json/canvas/p1",
+                    "@type": "sc:Canvas",
+                    "label": "275 - Kaart van de Rivier van Canton, van den Mond tot Anhingfu.",
+                    "metadata": [
+                        {
+                            "label": "Label",
+                            "value": "NL-HaNA_4.VEL_275"
+                        },
+                        {
+                            "label": "Identifier",
+                            "value": "275"
+                        },
+                        {
+                            "label": "Title",
+                            "value": "Kaart van de Rivier van Canton, van den Mond tot Anhingfu."
+                        },
+                        {
+                            "label": "Date",
+                            "value": "?"
+                        },
+                        {
+                            "label": "Permalink",
+                            "value": "<a href=\"http://hdl.handle.net/10648/e5c3db34-e0fb-46f6-bf16-4f4113d289e5\">http://hdl.handle.net/10648/e5c3db34-e0fb-46f6-bf16-4f4113d289e5</a>"
+                        }
+                    ],
+                    "height": 6412,
+                    "width": 8872,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "resource": {
+                                "@id": "https://service.archief.nl/iipsrv?IIIF=//fe/90/6d/44/11/5c/4c/51/89/18/d1/87/1a/83/ce/39/19d2eff6-4244-4006-8b82-81da75340a6f.jp2/full/full/0/default.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 6412,
+                                "width": 8872,
+                                "service": {
+                                    "@context": "http://iiif.io/api/image/2/context.json",
+                                    "@id": "https://service.archief.nl/iipsrv?IIIF=//fe/90/6d/44/11/5c/4c/51/89/18/d1/87/1a/83/ce/39/19d2eff6-4244-4006-8b82-81da75340a6f.jp2",
+                                    "profile": "http://iiif.io/api/image/2/level2.json"
+                                }
+                            },
+                            "on": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.10/275.json/canvas/p1"
+                        }
+                    ]
+                },
+                {
+                    "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.10/276.json/canvas/p1",
+                    "@type": "sc:Canvas",
+                    "label": "276 - Kaart van de Eilanden van Maccao, benevens de Mond der Rivier van Cantaon.",
+                    "metadata": [
+                        {
+                            "label": "Label",
+                            "value": "NL-HaNA_4.VEL_276"
+                        },
+                        {
+                            "label": "Identifier",
+                            "value": "276"
+                        },
+                        {
+                            "label": "Title",
+                            "value": "Kaart van de Eilanden van Maccao, benevens de Mond der Rivier van Cantaon."
+                        },
+                        {
+                            "label": "Date",
+                            "value": "1600/1700"
+                        },
+                        {
+                            "label": "Permalink",
+                            "value": "<a href=\"http://hdl.handle.net/10648/3754e106-8c73-4b07-8354-1e189582bc6d\">http://hdl.handle.net/10648/3754e106-8c73-4b07-8354-1e189582bc6d</a>"
+                        }
+                    ],
+                    "height": 6429,
+                    "width": 8973,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "resource": {
+                                "@id": "https://service.archief.nl/iipsrv?IIIF=//da/4e/b7/ae/ca/b0/45/89/89/a3/16/d3/43/10/c4/bc/b599ba1b-f20b-49f2-a3dc-83bc125d3a2e.jp2/full/full/0/default.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 6429,
+                                "width": 8973,
+                                "service": {
+                                    "@context": "http://iiif.io/api/image/2/context.json",
+                                    "@id": "https://service.archief.nl/iipsrv?IIIF=//da/4e/b7/ae/ca/b0/45/89/89/a3/16/d3/43/10/c4/bc/b599ba1b-f20b-49f2-a3dc-83bc125d3a2e.jp2",
+                                    "profile": "http://iiif.io/api/image/2/level2.json"
+                                }
+                            },
+                            "on": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.10/276.json/canvas/p1"
+                        }
+                    ]
+                },
+                {
+                    "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.10/277.json/canvas/p1",
+                    "@type": "sc:Canvas",
+                    "label": "277 - Kaart van de Eylanden van Maccao.",
+                    "metadata": [
+                        {
+                            "label": "Label",
+                            "value": "NL-HaNA_4.VEL_277"
+                        },
+                        {
+                            "label": "Identifier",
+                            "value": "277"
+                        },
+                        {
+                            "label": "Title",
+                            "value": "Kaart van de Eylanden van Maccao."
+                        },
+                        {
+                            "label": "Date",
+                            "value": "1600/1700"
+                        },
+                        {
+                            "label": "Permalink",
+                            "value": "<a href=\"http://hdl.handle.net/10648/3553fcbc-cad3-431f-934d-51a310f08bd1\">http://hdl.handle.net/10648/3553fcbc-cad3-431f-934d-51a310f08bd1</a>"
+                        }
+                    ],
+                    "height": 6420,
+                    "width": 8990,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "resource": {
+                                "@id": "https://service.archief.nl/iipsrv?IIIF=//56/a0/0a/00/64/b6/41/56/bc/7a/57/5e/01/c6/91/13/9ed0d94c-1056-481d-bbc2-31b5bfb0ff0b.jp2/full/full/0/default.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 6420,
+                                "width": 8990,
+                                "service": {
+                                    "@context": "http://iiif.io/api/image/2/context.json",
+                                    "@id": "https://service.archief.nl/iipsrv?IIIF=//56/a0/0a/00/64/b6/41/56/bc/7a/57/5e/01/c6/91/13/9ed0d94c-1056-481d-bbc2-31b5bfb0ff0b.jp2",
+                                    "profile": "http://iiif.io/api/image/2/level2.json"
+                                }
+                            },
+                            "on": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.10/277.json/canvas/p1"
+                        }
+                    ]
+                },
+                {
+                    "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.10/278A-278B.json/canvas/p1",
+                    "@type": "sc:Canvas",
+                    "label": "278A-278B - Kaart van de Eilanden en Klippen, gelegen voor de Kust van China, tusschen de Mandarynskap en het Eiland Songai.",
+                    "metadata": [
+                        {
+                            "label": "Label",
+                            "value": "NL-HaNA_4.VEL_278A"
+                        },
+                        {
+                            "label": "Identifier",
+                            "value": "278A-278B"
+                        },
+                        {
+                            "label": "Title",
+                            "value": "Kaart van de Eilanden en Klippen, gelegen voor de Kust van China, tusschen de Mandarynskap en het Eiland Songai."
+                        },
+                        {
+                            "label": "Date",
+                            "value": "1700/1800"
+                        },
+                        {
+                            "label": "Permalink",
+                            "value": "<a href=\"\"></a>"
+                        }
+                    ],
+                    "height": 8810,
+                    "width": 15274,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "resource": {
+                                "@id": "https://service.archief.nl/iipsrv?IIIF=//01/4b/bf/98/7a/a5/47/90/b4/70/88/e2/c1/c9/b0/3b/66c0ce85-b0bf-46e6-babc-8e16014e924f.jp2/full/full/0/default.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 8810,
+                                "width": 15274,
+                                "service": {
+                                    "@context": "http://iiif.io/api/image/2/context.json",
+                                    "@id": "https://service.archief.nl/iipsrv?IIIF=//01/4b/bf/98/7a/a5/47/90/b4/70/88/e2/c1/c9/b0/3b/66c0ce85-b0bf-46e6-babc-8e16014e924f.jp2",
+                                    "profile": "http://iiif.io/api/image/2/level2.json"
+                                }
+                            },
+                            "on": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.10/278A-278B.json/canvas/p1"
+                        }
+                    ]
+                },
+                {
+                    "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.10/278A-278B.json/canvas/p2",
+                    "@type": "sc:Canvas",
+                    "label": "278A-278B - Kaart van de Eilanden en Klippen, gelegen voor de Kust van China, tusschen de Mandarynskap en het Eiland Songai.",
+                    "metadata": [
+                        {
+                            "label": "Label",
+                            "value": "NL-HaNA_4.VEL_278B"
+                        },
+                        {
+                            "label": "Identifier",
+                            "value": "278A-278B"
+                        },
+                        {
+                            "label": "Title",
+                            "value": "Kaart van de Eilanden en Klippen, gelegen voor de Kust van China, tusschen de Mandarynskap en het Eiland Songai."
+                        },
+                        {
+                            "label": "Date",
+                            "value": "1700/1800"
+                        },
+                        {
+                            "label": "Permalink",
+                            "value": "<a href=\"\"></a>"
+                        }
+                    ],
+                    "height": 8915,
+                    "width": 15212,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "resource": {
+                                "@id": "https://service.archief.nl/iipsrv?IIIF=//43/76/d6/c2/fe/e0/4a/08/8e/d8/44/e4/be/c0/dc/40/c56e7ece-559d-4bce-9c31-76749e79fb2c.jp2/full/full/0/default.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 8915,
+                                "width": 15212,
+                                "service": {
+                                    "@context": "http://iiif.io/api/image/2/context.json",
+                                    "@id": "https://service.archief.nl/iipsrv?IIIF=//43/76/d6/c2/fe/e0/4a/08/8e/d8/44/e4/be/c0/dc/40/c56e7ece-559d-4bce-9c31-76749e79fb2c.jp2",
+                                    "profile": "http://iiif.io/api/image/2/level2.json"
+                                }
+                            },
+                            "on": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.10/278A-278B.json/canvas/p2"
+                        }
+                    ]
+                },
+                {
+                    "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.10/279.json/canvas/p1",
+                    "@type": "sc:Canvas",
+                    "label": "279 - Kaart van de Overveens Eylanden in China.",
+                    "metadata": [
+                        {
+                            "label": "Label",
+                            "value": "NL-HaNA_4.VEL_279"
+                        },
+                        {
+                            "label": "Identifier",
+                            "value": "279"
+                        },
+                        {
+                            "label": "Title",
+                            "value": "Kaart van de Overveens Eylanden in China."
+                        },
+                        {
+                            "label": "Date",
+                            "value": "1600/1700"
+                        },
+                        {
+                            "label": "Permalink",
+                            "value": "<a href=\"http://hdl.handle.net/10648/5f6cfe84-2139-4a7a-bc96-c7fb84328c41\">http://hdl.handle.net/10648/5f6cfe84-2139-4a7a-bc96-c7fb84328c41</a>"
+                        }
+                    ],
+                    "height": 6370,
+                    "width": 8897,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "resource": {
+                                "@id": "https://service.archief.nl/iipsrv?IIIF=//fb/8c/26/fc/e3/02/46/91/85/3e/ef/c6/b1/72/91/b0/f943fff2-4c59-439e-9818-7b9b8db17bc5.jp2/full/full/0/default.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 6370,
+                                "width": 8897,
+                                "service": {
+                                    "@context": "http://iiif.io/api/image/2/context.json",
+                                    "@id": "https://service.archief.nl/iipsrv?IIIF=//fb/8c/26/fc/e3/02/46/91/85/3e/ef/c6/b1/72/91/b0/f943fff2-4c59-439e-9818-7b9b8db17bc5.jp2",
+                                    "profile": "http://iiif.io/api/image/2/level2.json"
+                                }
+                            },
+                            "on": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.10/279.json/canvas/p1"
+                        }
+                    ]
+                },
+                {
+                    "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.10/280.json/canvas/p1",
+                    "@type": "sc:Canvas",
+                    "label": "280 - Affteyckeninghe van de ghelegentheyt van 't Eylandt Lamoo, aen de Cust van China ghelegen.",
+                    "metadata": [
+                        {
+                            "label": "Label",
+                            "value": "NL-HaNA_4.VEL_280"
+                        },
+                        {
+                            "label": "Identifier",
+                            "value": "280"
+                        },
+                        {
+                            "label": "Title",
+                            "value": "Affteyckeninghe van de ghelegentheyt van 't Eylandt Lamoo, aen de Cust van China ghelegen."
+                        },
+                        {
+                            "label": "Date",
+                            "value": "1622"
+                        },
+                        {
+                            "label": "Permalink",
+                            "value": "<a href=\"http://hdl.handle.net/10648/dfc40328-a7bc-4b35-8b7e-d9d99021395e\">http://hdl.handle.net/10648/dfc40328-a7bc-4b35-8b7e-d9d99021395e</a>"
+                        }
+                    ],
+                    "height": 4124,
+                    "width": 5431,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "resource": {
+                                "@id": "https://service.archief.nl/iipsrv?IIIF=//db/d4/e8/79/62/bd/45/84/bf/5d/b0/a1/28/21/80/11/e6a5c232-e49b-44a2-ad9d-6cb814be5142.jp2/full/full/0/default.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 4124,
+                                "width": 5431,
+                                "service": {
+                                    "@context": "http://iiif.io/api/image/2/context.json",
+                                    "@id": "https://service.archief.nl/iipsrv?IIIF=//db/d4/e8/79/62/bd/45/84/bf/5d/b0/a1/28/21/80/11/e6a5c232-e49b-44a2-ad9d-6cb814be5142.jp2",
+                                    "profile": "http://iiif.io/api/image/2/level2.json"
+                                }
+                            },
+                            "on": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.10/280.json/canvas/p1"
+                        }
+                    ]
+                },
+                {
+                    "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.10/281.json/canvas/p1",
+                    "@type": "sc:Canvas",
+                    "label": "281 - Affteyckeningh van de Rivier van Cincheo aen de Cust van China, op de hooghte van 24 graden 15 minuten N.Br.",
+                    "metadata": [
+                        {
+                            "label": "Label",
+                            "value": "NL-HaNA_4.VEL_281"
+                        },
+                        {
+                            "label": "Identifier",
+                            "value": "281"
+                        },
+                        {
+                            "label": "Title",
+                            "value": "Affteyckeningh van de Rivier van Cincheo aen de Cust van China, op de hooghte van 24 graden 15 minuten N.Br."
+                        },
+                        {
+                            "label": "Date",
+                            "value": "1622"
+                        },
+                        {
+                            "label": "Permalink",
+                            "value": "<a href=\"http://hdl.handle.net/10648/8601e247-bf5b-4181-ad3f-48bef28bb9e3\">http://hdl.handle.net/10648/8601e247-bf5b-4181-ad3f-48bef28bb9e3</a>"
+                        }
+                    ],
+                    "height": 4112,
+                    "width": 5561,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "resource": {
+                                "@id": "https://service.archief.nl/iipsrv?IIIF=//a9/cc/a8/da/2e/2f/40/f3/85/99/f5/33/7f/f3/64/ce/5259fa44-0eb0-45cc-9b73-2d0dc24efa0d.jp2/full/full/0/default.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 4112,
+                                "width": 5561,
+                                "service": {
+                                    "@context": "http://iiif.io/api/image/2/context.json",
+                                    "@id": "https://service.archief.nl/iipsrv?IIIF=//a9/cc/a8/da/2e/2f/40/f3/85/99/f5/33/7f/f3/64/ce/5259fa44-0eb0-45cc-9b73-2d0dc24efa0d.jp2",
+                                    "profile": "http://iiif.io/api/image/2/level2.json"
+                                }
+                            },
+                            "on": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.10/281.json/canvas/p1"
+                        }
+                    ]
+                },
+                {
+                    "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.10/282.json/canvas/p1",
+                    "@type": "sc:Canvas",
+                    "label": "282 - Affteycheninghe van de Bahia van Hantansouw, gelegen tusschen Lamo en de rivier van Chincheo.",
+                    "metadata": [
+                        {
+                            "label": "Label",
+                            "value": "NL-HaNA_4.VEL_282"
+                        },
+                        {
+                            "label": "Identifier",
+                            "value": "282"
+                        },
+                        {
+                            "label": "Title",
+                            "value": "Affteycheninghe van de Bahia van Hantansouw, gelegen tusschen Lamo en de rivier van Chincheo."
+                        },
+                        {
+                            "label": "Date",
+                            "value": "1622"
+                        },
+                        {
+                            "label": "Permalink",
+                            "value": "<a href=\"http://hdl.handle.net/10648/d6f37bfe-3a8c-4fc4-9d22-5ad6b2dfc79f\">http://hdl.handle.net/10648/d6f37bfe-3a8c-4fc4-9d22-5ad6b2dfc79f</a>"
+                        }
+                    ],
+                    "height": 5686,
+                    "width": 4081,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "resource": {
+                                "@id": "https://service.archief.nl/iipsrv?IIIF=//80/87/a6/b1/78/65/4d/66/a5/31/51/ef/d1/7f/55/68/af50a6f5-2750-421f-89dc-09ff65f662c8.jp2/full/full/0/default.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 5686,
+                                "width": 4081,
+                                "service": {
+                                    "@context": "http://iiif.io/api/image/2/context.json",
+                                    "@id": "https://service.archief.nl/iipsrv?IIIF=//80/87/a6/b1/78/65/4d/66/a5/31/51/ef/d1/7f/55/68/af50a6f5-2750-421f-89dc-09ff65f662c8.jp2",
+                                    "profile": "http://iiif.io/api/image/2/level2.json"
+                                }
+                            },
+                            "on": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.10/282.json/canvas/p1"
+                        }
+                    ]
+                },
+                {
+                    "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.10/283.json/canvas/p1",
+                    "@type": "sc:Canvas",
+                    "label": "283 - Kaart van de reede en haven voor de Hocksiuwse rivier, leggende op 26 - 15 N.Br. enz.",
+                    "metadata": [
+                        {
+                            "label": "Label",
+                            "value": "NL-HaNA_4.VEL_283"
+                        },
+                        {
+                            "label": "Identifier",
+                            "value": "283"
+                        },
+                        {
+                            "label": "Title",
+                            "value": "Kaart van de reede en haven voor de Hocksiuwse rivier, leggende op 26 - 15 N.Br. enz."
+                        },
+                        {
+                            "label": "Date",
+                            "value": "1662"
+                        },
+                        {
+                            "label": "Permalink",
+                            "value": "<a href=\"http://hdl.handle.net/10648/a3233257-00d8-481c-81a2-814f78b9bd9a\">http://hdl.handle.net/10648/a3233257-00d8-481c-81a2-814f78b9bd9a</a>"
+                        }
+                    ],
+                    "height": 9457,
+                    "width": 11492,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "resource": {
+                                "@id": "https://service.archief.nl/iipsrv?IIIF=//76/9e/e5/e7/f7/bd/41/15/b3/fb/e2/ea/17/a5/5b/3a/4393ba3f-ed6a-481e-941f-ed0c955630e1.jp2/full/full/0/default.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 9457,
+                                "width": 11492,
+                                "service": {
+                                    "@context": "http://iiif.io/api/image/2/context.json",
+                                    "@id": "https://service.archief.nl/iipsrv?IIIF=//76/9e/e5/e7/f7/bd/41/15/b3/fb/e2/ea/17/a5/5b/3a/4393ba3f-ed6a-481e-941f-ed0c955630e1.jp2",
+                                    "profile": "http://iiif.io/api/image/2/level2.json"
+                                }
+                            },
+                            "on": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.10/283.json/canvas/p1"
+                        }
+                    ]
+                },
+                {
+                    "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.10/284.json/canvas/p1",
+                    "@type": "sc:Canvas",
+                    "label": "284 - Kaart van het Noord-Oostelyk gedeelte van Japan en Jeso, het Statenland, Compagnieland enz., waarop de trek der reis van den Commandeur Fries, met de Castricum in 1643.",
+                    "metadata": [
+                        {
+                            "label": "Label",
+                            "value": "NL-HaNA_4.VEL_284"
+                        },
+                        {
+                            "label": "Identifier",
+                            "value": "284"
+                        },
+                        {
+                            "label": "Title",
+                            "value": "Kaart van het Noord-Oostelyk gedeelte van Japan en Jeso, het Statenland, Compagnieland enz., waarop de trek der reis van den Commandeur Fries, met de Castricum in 1643."
+                        },
+                        {
+                            "label": "Date",
+                            "value": "1643"
+                        },
+                        {
+                            "label": "Permalink",
+                            "value": "<a href=\"http://hdl.handle.net/10648/e7bf5fbc-0bf9-439b-b7b5-39d9e5e586e5\">http://hdl.handle.net/10648/e7bf5fbc-0bf9-439b-b7b5-39d9e5e586e5</a>"
+                        }
+                    ],
+                    "height": 6302,
+                    "width": 8855,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "resource": {
+                                "@id": "https://service.archief.nl/iipsrv?IIIF=//6e/c2/20/df/93/f7/4a/33/b6/56/1f/a8/9e/3c/cf/af/64aeeed0-bffb-4735-842e-8a62b4c2b854.jp2/full/full/0/default.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 6302,
+                                "width": 8855,
+                                "service": {
+                                    "@context": "http://iiif.io/api/image/2/context.json",
+                                    "@id": "https://service.archief.nl/iipsrv?IIIF=//6e/c2/20/df/93/f7/4a/33/b6/56/1f/a8/9e/3c/cf/af/64aeeed0-bffb-4735-842e-8a62b4c2b854.jp2",
+                                    "profile": "http://iiif.io/api/image/2/level2.json"
+                                }
+                            },
+                            "on": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.10/284.json/canvas/p1"
+                        }
+                    ]
+                },
+                {
+                    "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.10/285.json/canvas/p1",
+                    "@type": "sc:Canvas",
+                    "label": "285 - Kaart der Japansche Eylanden, een gedeelte der Chineesche Kust, het Schiereiland Corea enz.",
+                    "metadata": [
+                        {
+                            "label": "Label",
+                            "value": "NL-HaNA_4.VEL_285"
+                        },
+                        {
+                            "label": "Identifier",
+                            "value": "285"
+                        },
+                        {
+                            "label": "Title",
+                            "value": "Kaart der Japansche Eylanden, een gedeelte der Chineesche Kust, het Schiereiland Corea enz."
+                        },
+                        {
+                            "label": "Date",
+                            "value": "1600/1700"
+                        },
+                        {
+                            "label": "Permalink",
+                            "value": "<a href=\"http://hdl.handle.net/10648/d5bd95e1-74ff-41e8-b726-ef0aa18a46a7\">http://hdl.handle.net/10648/d5bd95e1-74ff-41e8-b726-ef0aa18a46a7</a>"
+                        }
+                    ],
+                    "height": 6353,
+                    "width": 8914,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "resource": {
+                                "@id": "https://service.archief.nl/iipsrv?IIIF=//14/0b/56/9e/9b/bb/4e/ad/8d/e9/4a/9d/85/68/8e/83/bde9878c-83a0-456f-abbc-bf0e00eb2085.jp2/full/full/0/default.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 6353,
+                                "width": 8914,
+                                "service": {
+                                    "@context": "http://iiif.io/api/image/2/context.json",
+                                    "@id": "https://service.archief.nl/iipsrv?IIIF=//14/0b/56/9e/9b/bb/4e/ad/8d/e9/4a/9d/85/68/8e/83/bde9878c-83a0-456f-abbc-bf0e00eb2085.jp2",
+                                    "profile": "http://iiif.io/api/image/2/level2.json"
+                                }
+                            },
+                            "on": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.10/285.json/canvas/p1"
+                        }
+                    ]
+                },
+                {
+                    "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.10/286.json/canvas/p1",
+                    "@type": "sc:Canvas",
+                    "label": "286 - Kaart van Nippon en omliggende Eilanden.",
+                    "metadata": [
+                        {
+                            "label": "Label",
+                            "value": "NL-HaNA_4.VEL_286"
+                        },
+                        {
+                            "label": "Identifier",
+                            "value": "286"
+                        },
+                        {
+                            "label": "Title",
+                            "value": "Kaart van Nippon en omliggende Eilanden."
+                        },
+                        {
+                            "label": "Date",
+                            "value": "1600/1700"
+                        },
+                        {
+                            "label": "Permalink",
+                            "value": "<a href=\"http://hdl.handle.net/10648/e1c5afea-8062-4368-8754-999da62884ea\">http://hdl.handle.net/10648/e1c5afea-8062-4368-8754-999da62884ea</a>"
+                        }
+                    ],
+                    "height": 6302,
+                    "width": 8864,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "resource": {
+                                "@id": "https://service.archief.nl/iipsrv?IIIF=//b7/bb/27/9b/e8/99/41/3d/99/09/b9/c4/38/68/c1/73/6daa6313-cdc6-450c-8565-cccdb51c8380.jp2/full/full/0/default.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 6302,
+                                "width": 8864,
+                                "service": {
+                                    "@context": "http://iiif.io/api/image/2/context.json",
+                                    "@id": "https://service.archief.nl/iipsrv?IIIF=//b7/bb/27/9b/e8/99/41/3d/99/09/b9/c4/38/68/c1/73/6daa6313-cdc6-450c-8565-cccdb51c8380.jp2",
+                                    "profile": "http://iiif.io/api/image/2/level2.json"
+                                }
+                            },
+                            "on": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.10/286.json/canvas/p1"
+                        }
+                    ]
+                },
+                {
+                    "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.10/287A-287B.json/canvas/p1",
+                    "@type": "sc:Canvas",
+                    "label": "287A-287B - Aftekening van Zekere 4 \u00e0 5 stuks onbekende vaartuigen, dewelke zich omtrent Japan vertoond hebben enz.",
+                    "metadata": [
+                        {
+                            "label": "Label",
+                            "value": "NL-HaNA_4.VEL_287A"
+                        },
+                        {
+                            "label": "Identifier",
+                            "value": "287A-287B"
+                        },
+                        {
+                            "label": "Title",
+                            "value": "Aftekening van Zekere 4 \u00e0 5 stuks onbekende vaartuigen, dewelke zich omtrent Japan vertoond hebben enz."
+                        },
+                        {
+                            "label": "Date",
+                            "value": "1700/1800"
+                        },
+                        {
+                            "label": "Permalink",
+                            "value": "<a href=\"\"></a>"
+                        }
+                    ],
+                    "height": 6867,
+                    "width": 5224,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "resource": {
+                                "@id": "https://service.archief.nl/iipsrv?IIIF=//ce/57/7e/2d/9a/47/47/55/b2/ed/d1/bb/44/4f/26/22/03a6f910-4328-45f5-9372-fa0df378fa98.jp2/full/full/0/default.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 6867,
+                                "width": 5224,
+                                "service": {
+                                    "@context": "http://iiif.io/api/image/2/context.json",
+                                    "@id": "https://service.archief.nl/iipsrv?IIIF=//ce/57/7e/2d/9a/47/47/55/b2/ed/d1/bb/44/4f/26/22/03a6f910-4328-45f5-9372-fa0df378fa98.jp2",
+                                    "profile": "http://iiif.io/api/image/2/level2.json"
+                                }
+                            },
+                            "on": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.10/287A-287B.json/canvas/p1"
+                        }
+                    ]
+                },
+                {
+                    "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.10/287A-287B.json/canvas/p2",
+                    "@type": "sc:Canvas",
+                    "label": "287A-287B - Aftekening van Zekere 4 \u00e0 5 stuks onbekende vaartuigen, dewelke zich omtrent Japan vertoond hebben enz.",
+                    "metadata": [
+                        {
+                            "label": "Label",
+                            "value": "NL-HaNA_4.VEL_287B"
+                        },
+                        {
+                            "label": "Identifier",
+                            "value": "287A-287B"
+                        },
+                        {
+                            "label": "Title",
+                            "value": "Aftekening van Zekere 4 \u00e0 5 stuks onbekende vaartuigen, dewelke zich omtrent Japan vertoond hebben enz."
+                        },
+                        {
+                            "label": "Date",
+                            "value": "1700/1800"
+                        },
+                        {
+                            "label": "Permalink",
+                            "value": "<a href=\"\"></a>"
+                        }
+                    ],
+                    "height": 5165,
+                    "width": 6766,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "resource": {
+                                "@id": "https://service.archief.nl/iipsrv?IIIF=//ff/c7/12/f0/7e/3e/43/e6/a1/2b/fc/d9/92/c2/90/bd/1a4a0e18-a7e0-4797-815a-40de0f6dc241.jp2/full/full/0/default.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 5165,
+                                "width": 6766,
+                                "service": {
+                                    "@context": "http://iiif.io/api/image/2/context.json",
+                                    "@id": "https://service.archief.nl/iipsrv?IIIF=//ff/c7/12/f0/7e/3e/43/e6/a1/2b/fc/d9/92/c2/90/bd/1a4a0e18-a7e0-4797-815a-40de0f6dc241.jp2",
+                                    "profile": "http://iiif.io/api/image/2/level2.json"
+                                }
+                            },
+                            "on": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.10/287A-287B.json/canvas/p2"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

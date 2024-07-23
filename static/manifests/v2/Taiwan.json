@@ -1,0 +1,350 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://globalise-huygens.github.io/maps/manifests/v2/Taiwan.json",
+    "@type": "sc:Manifest",
+    "label": "Taiwan",
+    "viewingDirection": "left-to-right",
+    "sequences": [
+        {
+            "@type": "sc:Sequence",
+            "canvases": [
+                {
+                    "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.16/301.json/canvas/p1",
+                    "@type": "sc:Canvas",
+                    "label": "301 - Pascaert, waarin verthoont de gelegentheyt van Pehouw tot het Eylandt Tayowan en Wankan, ende Visschersbaey enz.",
+                    "metadata": [
+                        {
+                            "label": "Label",
+                            "value": "NL-HaNA_4.VEL_301"
+                        },
+                        {
+                            "label": "Identifier",
+                            "value": "301"
+                        },
+                        {
+                            "label": "Title",
+                            "value": "Pascaert, waarin verthoont de gelegentheyt van Pehouw tot het Eylandt Tayowan en Wankan, ende Visschersbaey enz."
+                        },
+                        {
+                            "label": "Date",
+                            "value": "1624/1625"
+                        },
+                        {
+                            "label": "Permalink",
+                            "value": "<a href=\"http://hdl.handle.net/10648/51fe82a6-bf23-4b63-952c-c45f9952adca\">http://hdl.handle.net/10648/51fe82a6-bf23-4b63-952c-c45f9952adca</a>"
+                        }
+                    ],
+                    "height": 4666,
+                    "width": 11704,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "resource": {
+                                "@id": "https://service.archief.nl/iipsrv?IIIF=//55/f7/34/b8/1b/ad/4d/71/90/47/3e/7c/0c/38/f1/1d/2fe435c0-1652-4d90-ad39-e8412f6093df.jp2/full/full/0/default.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 4666,
+                                "width": 11704,
+                                "service": {
+                                    "@context": "http://iiif.io/api/image/2/context.json",
+                                    "@id": "https://service.archief.nl/iipsrv?IIIF=//55/f7/34/b8/1b/ad/4d/71/90/47/3e/7c/0c/38/f1/1d/2fe435c0-1652-4d90-ad39-e8412f6093df.jp2",
+                                    "profile": "http://iiif.io/api/image/2/level2.json"
+                                }
+                            },
+                            "on": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.16/301.json/canvas/p1"
+                        }
+                    ]
+                },
+                {
+                    "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.16/302.json/canvas/p1",
+                    "@type": "sc:Canvas",
+                    "label": "302 - Pascaert, waerin verthoont wort de gelegentheyt van Tayoan enz.",
+                    "metadata": [
+                        {
+                            "label": "Label",
+                            "value": "NL-HaNA_4.VEL_302"
+                        },
+                        {
+                            "label": "Identifier",
+                            "value": "302"
+                        },
+                        {
+                            "label": "Title",
+                            "value": "Pascaert, waerin verthoont wort de gelegentheyt van Tayoan enz."
+                        },
+                        {
+                            "label": "Date",
+                            "value": "1624/1625"
+                        },
+                        {
+                            "label": "Permalink",
+                            "value": "<a href=\"http://hdl.handle.net/10648/65cb9090-7d56-4e3c-babc-9c7efa550f3b\">http://hdl.handle.net/10648/65cb9090-7d56-4e3c-babc-9c7efa550f3b</a>"
+                        }
+                    ],
+                    "height": 4649,
+                    "width": 11556,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "resource": {
+                                "@id": "https://service.archief.nl/iipsrv?IIIF=//40/84/47/02/f3/a4/4b/2d/a6/22/1d/df/36/88/d4/d2/a9e17ba1-67d1-4d14-9030-e28c4fbac349.jp2/full/full/0/default.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 4649,
+                                "width": 11556,
+                                "service": {
+                                    "@context": "http://iiif.io/api/image/2/context.json",
+                                    "@id": "https://service.archief.nl/iipsrv?IIIF=//40/84/47/02/f3/a4/4b/2d/a6/22/1d/df/36/88/d4/d2/a9e17ba1-67d1-4d14-9030-e28c4fbac349.jp2",
+                                    "profile": "http://iiif.io/api/image/2/level2.json"
+                                }
+                            },
+                            "on": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.16/302.json/canvas/p1"
+                        }
+                    ]
+                },
+                {
+                    "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.16/303.json/canvas/p1",
+                    "@type": "sc:Canvas",
+                    "label": "303 - Pascaert, waerin verthoont wort de gelegentheyt van Tayoan enz.",
+                    "metadata": [
+                        {
+                            "label": "Label",
+                            "value": "NL-HaNA_4.VEL_303"
+                        },
+                        {
+                            "label": "Identifier",
+                            "value": "303"
+                        },
+                        {
+                            "label": "Title",
+                            "value": "Pascaert, waerin verthoont wort de gelegentheyt van Tayoan enz."
+                        },
+                        {
+                            "label": "Date",
+                            "value": "1624/1625"
+                        },
+                        {
+                            "label": "Permalink",
+                            "value": "<a href=\"http://hdl.handle.net/10648/e55eb4ef-1399-4d51-8287-1b202d560cce\">http://hdl.handle.net/10648/e55eb4ef-1399-4d51-8287-1b202d560cce</a>"
+                        }
+                    ],
+                    "height": 4609,
+                    "width": 5856,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "resource": {
+                                "@id": "https://service.archief.nl/iipsrv?IIIF=//fe/34/19/89/e1/11/43/75/b4/60/a2/98/67/6b/de/19/9c745a79-c12c-4307-bc61-7e40f90ed18d.jp2/full/full/0/default.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 4609,
+                                "width": 5856,
+                                "service": {
+                                    "@context": "http://iiif.io/api/image/2/context.json",
+                                    "@id": "https://service.archief.nl/iipsrv?IIIF=//fe/34/19/89/e1/11/43/75/b4/60/a2/98/67/6b/de/19/9c745a79-c12c-4307-bc61-7e40f90ed18d.jp2",
+                                    "profile": "http://iiif.io/api/image/2/level2.json"
+                                }
+                            },
+                            "on": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.16/303.json/canvas/p1"
+                        }
+                    ]
+                },
+                {
+                    "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.16/304.json/canvas/p1",
+                    "@type": "sc:Canvas",
+                    "label": "304 - Packan (Formosa), alsoo 'tselve beseylt door Jacob Noordeloos.",
+                    "metadata": [
+                        {
+                            "label": "Label",
+                            "value": "NL-HaNA_4.VEL_304"
+                        },
+                        {
+                            "label": "Identifier",
+                            "value": "304"
+                        },
+                        {
+                            "label": "Title",
+                            "value": "Packan (Formosa), alsoo 'tselve beseylt door Jacob Noordeloos."
+                        },
+                        {
+                            "label": "Date",
+                            "value": "1624/1625"
+                        },
+                        {
+                            "label": "Permalink",
+                            "value": "<a href=\"http://hdl.handle.net/10648/5b0507f6-1a28-400f-a676-bdc58cb4e1dc\">http://hdl.handle.net/10648/5b0507f6-1a28-400f-a676-bdc58cb4e1dc</a>"
+                        }
+                    ],
+                    "height": 4408,
+                    "width": 6848,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "resource": {
+                                "@id": "https://service.archief.nl/iipsrv?IIIF=//1f/46/36/86/b6/c0/4b/ee/a1/34/da/f2/00/6a/d1/a6/49c5061c-87a1-4a96-9c4d-33a63fd559e5.jp2/full/full/0/default.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 4408,
+                                "width": 6848,
+                                "service": {
+                                    "@context": "http://iiif.io/api/image/2/context.json",
+                                    "@id": "https://service.archief.nl/iipsrv?IIIF=//1f/46/36/86/b6/c0/4b/ee/a1/34/da/f2/00/6a/d1/a6/49c5061c-87a1-4a96-9c4d-33a63fd559e5.jp2",
+                                    "profile": "http://iiif.io/api/image/2/level2.json"
+                                }
+                            },
+                            "on": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.16/304.json/canvas/p1"
+                        }
+                    ]
+                },
+                {
+                    "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.16/305.json/canvas/p1",
+                    "@type": "sc:Canvas",
+                    "label": "305 - Kaart van de reven enz., voor de Stad Zeelandia enz.",
+                    "metadata": [
+                        {
+                            "label": "Label",
+                            "value": "NL-HaNA_4.VEL_305"
+                        },
+                        {
+                            "label": "Identifier",
+                            "value": "305"
+                        },
+                        {
+                            "label": "Title",
+                            "value": "Kaart van de reven enz., voor de Stad Zeelandia enz."
+                        },
+                        {
+                            "label": "Date",
+                            "value": "1600/1700"
+                        },
+                        {
+                            "label": "Permalink",
+                            "value": "<a href=\"http://hdl.handle.net/10648/196b7626-9086-4779-ac9f-a90095957382\">http://hdl.handle.net/10648/196b7626-9086-4779-ac9f-a90095957382</a>"
+                        }
+                    ],
+                    "height": 6352,
+                    "width": 8888,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "resource": {
+                                "@id": "https://service.archief.nl/iipsrv?IIIF=//a1/93/06/07/ca/12/4b/79/a1/ec/3c/26/7b/1f/07/03/339e811e-aa23-4fee-a264-01bdef7fe6d9.jp2/full/full/0/default.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 6352,
+                                "width": 8888,
+                                "service": {
+                                    "@context": "http://iiif.io/api/image/2/context.json",
+                                    "@id": "https://service.archief.nl/iipsrv?IIIF=//a1/93/06/07/ca/12/4b/79/a1/ec/3c/26/7b/1f/07/03/339e811e-aa23-4fee-a264-01bdef7fe6d9.jp2",
+                                    "profile": "http://iiif.io/api/image/2/level2.json"
+                                }
+                            },
+                            "on": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.16/305.json/canvas/p1"
+                        }
+                    ]
+                },
+                {
+                    "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.16/306.json/canvas/p1",
+                    "@type": "sc:Canvas",
+                    "label": "306 - Affteyckeninghe van de Baye van Tayuwan enz.",
+                    "metadata": [
+                        {
+                            "label": "Label",
+                            "value": "NL-HaNA_4.VEL_306"
+                        },
+                        {
+                            "label": "Identifier",
+                            "value": "306"
+                        },
+                        {
+                            "label": "Title",
+                            "value": "Affteyckeninghe van de Baye van Tayuwan enz."
+                        },
+                        {
+                            "label": "Date",
+                            "value": "1624/1625"
+                        },
+                        {
+                            "label": "Permalink",
+                            "value": "<a href=\"http://hdl.handle.net/10648/6a4c6c57-acd0-471b-8648-417671067131\">http://hdl.handle.net/10648/6a4c6c57-acd0-471b-8648-417671067131</a>"
+                        }
+                    ],
+                    "height": 4096,
+                    "width": 5616,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "resource": {
+                                "@id": "https://service.archief.nl/iipsrv?IIIF=//e2/15/4c/cf/08/2f/44/34/8d/ba/30/a1/f3/a3/44/d6/b70089c7-a9e4-4c31-bbeb-1c46c63f6819.jp2/full/full/0/default.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 4096,
+                                "width": 5616,
+                                "service": {
+                                    "@context": "http://iiif.io/api/image/2/context.json",
+                                    "@id": "https://service.archief.nl/iipsrv?IIIF=//e2/15/4c/cf/08/2f/44/34/8d/ba/30/a1/f3/a3/44/d6/b70089c7-a9e4-4c31-bbeb-1c46c63f6819.jp2",
+                                    "profile": "http://iiif.io/api/image/2/level2.json"
+                                }
+                            },
+                            "on": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.16/306.json/canvas/p1"
+                        }
+                    ]
+                },
+                {
+                    "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.16/307.json/canvas/p1",
+                    "@type": "sc:Canvas",
+                    "label": "307 - Kaart van de Noordkust van het Eiland Formosa met het Eiland Kelang.",
+                    "metadata": [
+                        {
+                            "label": "Label",
+                            "value": "NL-HaNA_4.VEL_307"
+                        },
+                        {
+                            "label": "Identifier",
+                            "value": "307"
+                        },
+                        {
+                            "label": "Title",
+                            "value": "Kaart van de Noordkust van het Eiland Formosa met het Eiland Kelang."
+                        },
+                        {
+                            "label": "Date",
+                            "value": "1600/1700"
+                        },
+                        {
+                            "label": "Permalink",
+                            "value": "<a href=\"http://hdl.handle.net/10648/42a05da0-1ea0-4e91-b6a6-634531bc9236\">http://hdl.handle.net/10648/42a05da0-1ea0-4e91-b6a6-634531bc9236</a>"
+                        }
+                    ],
+                    "height": 5873,
+                    "width": 8249,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "resource": {
+                                "@id": "https://service.archief.nl/iipsrv?IIIF=//e6/c2/5d/5c/47/2c/41/51/85/a4/0d/86/33/02/67/2e/5b1ee902-2879-49cc-ac5f-3ca7549b3144.jp2/full/full/0/default.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 5873,
+                                "width": 8249,
+                                "service": {
+                                    "@context": "http://iiif.io/api/image/2/context.json",
+                                    "@id": "https://service.archief.nl/iipsrv?IIIF=//e6/c2/5d/5c/47/2c/41/51/85/a4/0d/86/33/02/67/2e/5b1ee902-2879-49cc-ac5f-3ca7549b3144.jp2",
+                                    "profile": "http://iiif.io/api/image/2/level2.json"
+                                }
+                            },
+                            "on": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.16/307.json/canvas/p1"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

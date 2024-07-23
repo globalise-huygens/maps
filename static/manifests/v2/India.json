@@ -1,0 +1,590 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://globalise-huygens.github.io/maps/manifests/v2/India.json",
+    "@type": "sc:Manifest",
+    "label": "India",
+    "viewingDirection": "left-to-right",
+    "sequences": [
+        {
+            "@type": "sc:Sequence",
+            "canvases": [
+                {
+                    "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.2/223.json/canvas/p1",
+                    "@type": "sc:Canvas",
+                    "label": "223 - Kaart van de kust van Dekan en Canare, van de Kom van Sualy (Soeratte) tot de Rivier Pen.",
+                    "metadata": [
+                        {
+                            "label": "Label",
+                            "value": "NL-HaNA_4.VEL_223"
+                        },
+                        {
+                            "label": "Identifier",
+                            "value": "223"
+                        },
+                        {
+                            "label": "Title",
+                            "value": "Kaart van de kust van Dekan en Canare, van de Kom van Sualy (Soeratte) tot de Rivier Pen."
+                        },
+                        {
+                            "label": "Date",
+                            "value": "1600/1700"
+                        },
+                        {
+                            "label": "Permalink",
+                            "value": "<a href=\"http://hdl.handle.net/10648/610f1f21-ccfd-4ac9-8c30-a7c2c52c68ea\">http://hdl.handle.net/10648/610f1f21-ccfd-4ac9-8c30-a7c2c52c68ea</a>"
+                        }
+                    ],
+                    "height": 9302,
+                    "width": 6505,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "resource": {
+                                "@id": "https://service.archief.nl/iipsrv?IIIF=//cd/01/40/73/2d/fc/43/05/98/18/a3/a2/c0/91/62/1f/f929e7ee-a922-48d6-b457-fde4162fb738.jp2/full/full/0/default.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 9302,
+                                "width": 6505,
+                                "service": {
+                                    "@context": "http://iiif.io/api/image/2/context.json",
+                                    "@id": "https://service.archief.nl/iipsrv?IIIF=//cd/01/40/73/2d/fc/43/05/98/18/a3/a2/c0/91/62/1f/f929e7ee-a922-48d6-b457-fde4162fb738.jp2",
+                                    "profile": "http://iiif.io/api/image/2/level2.json"
+                                }
+                            },
+                            "on": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.2/223.json/canvas/p1"
+                        }
+                    ]
+                },
+                {
+                    "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.2/224-224A.json/canvas/p1",
+                    "@type": "sc:Canvas",
+                    "label": "224-224A - Een Zeekaart van de Kust alwaar den Piraad Cangi Angria zig onthoudt (van Schreyershoek tot de rivier Sangisser)",
+                    "metadata": [
+                        {
+                            "label": "Label",
+                            "value": "NL-HaNA_4.VEL_224"
+                        },
+                        {
+                            "label": "Identifier",
+                            "value": "224-224A"
+                        },
+                        {
+                            "label": "Title",
+                            "value": "Een Zeekaart van de Kust alwaar den Piraad Cangi Angria zig onthoudt (van Schreyershoek tot de rivier Sangisser)"
+                        },
+                        {
+                            "label": "Date",
+                            "value": "1700/1800"
+                        },
+                        {
+                            "label": "Permalink",
+                            "value": "<a href=\"\"></a>"
+                        }
+                    ],
+                    "height": 6475,
+                    "width": 16309,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "resource": {
+                                "@id": "https://service.archief.nl/iipsrv?IIIF=//71/32/58/04/f6/4d/46/44/b1/4f/3e/c2/b5/f9/92/d9/21b44ee7-69d6-41ff-8d10-b7f988a17156.jp2/full/full/0/default.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 6475,
+                                "width": 16309,
+                                "service": {
+                                    "@context": "http://iiif.io/api/image/2/context.json",
+                                    "@id": "https://service.archief.nl/iipsrv?IIIF=//71/32/58/04/f6/4d/46/44/b1/4f/3e/c2/b5/f9/92/d9/21b44ee7-69d6-41ff-8d10-b7f988a17156.jp2",
+                                    "profile": "http://iiif.io/api/image/2/level2.json"
+                                }
+                            },
+                            "on": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.2/224-224A.json/canvas/p1"
+                        }
+                    ]
+                },
+                {
+                    "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.2/224-224A.json/canvas/p2",
+                    "@type": "sc:Canvas",
+                    "label": "224-224A - Een Zeekaart van de Kust alwaar den Piraad Cangi Angria zig onthoudt (van Schreyershoek tot de rivier Sangisser)",
+                    "metadata": [
+                        {
+                            "label": "Label",
+                            "value": "NL-HaNA_4.VEL_224A"
+                        },
+                        {
+                            "label": "Identifier",
+                            "value": "224-224A"
+                        },
+                        {
+                            "label": "Title",
+                            "value": "Een Zeekaart van de Kust alwaar den Piraad Cangi Angria zig onthoudt (van Schreyershoek tot de rivier Sangisser)"
+                        },
+                        {
+                            "label": "Date",
+                            "value": "1700/1800"
+                        },
+                        {
+                            "label": "Permalink",
+                            "value": "<a href=\"\"></a>"
+                        }
+                    ],
+                    "height": 6762,
+                    "width": 16117,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "resource": {
+                                "@id": "https://service.archief.nl/iipsrv?IIIF=//42/24/92/4f/02/b1/44/0a/a1/ea/2a/7e/e4/eb/ff/a9/bad889c2-3aa1-4b28-842f-1347e5a744a0.jp2/full/full/0/default.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 6762,
+                                "width": 16117,
+                                "service": {
+                                    "@context": "http://iiif.io/api/image/2/context.json",
+                                    "@id": "https://service.archief.nl/iipsrv?IIIF=//42/24/92/4f/02/b1/44/0a/a1/ea/2a/7e/e4/eb/ff/a9/bad889c2-3aa1-4b28-842f-1347e5a744a0.jp2",
+                                    "profile": "http://iiif.io/api/image/2/level2.json"
+                                }
+                            },
+                            "on": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.2/224-224A.json/canvas/p2"
+                        }
+                    ]
+                },
+                {
+                    "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.2/225.json/canvas/p1",
+                    "@type": "sc:Canvas",
+                    "label": "225 - Kaart van de rivier Souratte.",
+                    "metadata": [
+                        {
+                            "label": "Label",
+                            "value": "NL-HaNA_4.VEL_225"
+                        },
+                        {
+                            "label": "Identifier",
+                            "value": "225"
+                        },
+                        {
+                            "label": "Title",
+                            "value": "Kaart van de rivier Souratte."
+                        },
+                        {
+                            "label": "Date",
+                            "value": "1600/1700"
+                        },
+                        {
+                            "label": "Permalink",
+                            "value": "<a href=\"http://hdl.handle.net/10648/6ccde456-856c-425e-91d5-4d3b69eabaab\">http://hdl.handle.net/10648/6ccde456-856c-425e-91d5-4d3b69eabaab</a>"
+                        }
+                    ],
+                    "height": 6429,
+                    "width": 8872,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "resource": {
+                                "@id": "https://service.archief.nl/iipsrv?IIIF=//c1/38/91/b9/df/3e/4c/5a/a3/48/df/b8/90/b0/97/0a/e3f11349-ea97-482f-9eec-0a6459d1e5f3.jp2/full/full/0/default.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 6429,
+                                "width": 8872,
+                                "service": {
+                                    "@context": "http://iiif.io/api/image/2/context.json",
+                                    "@id": "https://service.archief.nl/iipsrv?IIIF=//c1/38/91/b9/df/3e/4c/5a/a3/48/df/b8/90/b0/97/0a/e3f11349-ea97-482f-9eec-0a6459d1e5f3.jp2",
+                                    "profile": "http://iiif.io/api/image/2/level2.json"
+                                }
+                            },
+                            "on": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.2/225.json/canvas/p1"
+                        }
+                    ]
+                },
+                {
+                    "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.2/226.json/canvas/p1",
+                    "@type": "sc:Canvas",
+                    "label": "226 - Kaart van Gouzaratte, Cucan of Visiapoer, van R. Pilatus tot Dabul.",
+                    "metadata": [
+                        {
+                            "label": "Label",
+                            "value": "NL-HaNA_4.VEL_226"
+                        },
+                        {
+                            "label": "Identifier",
+                            "value": "226"
+                        },
+                        {
+                            "label": "Title",
+                            "value": "Kaart van Gouzaratte, Cucan of Visiapoer, van R. Pilatus tot Dabul."
+                        },
+                        {
+                            "label": "Date",
+                            "value": "1600/1700"
+                        },
+                        {
+                            "label": "Permalink",
+                            "value": "<a href=\"http://hdl.handle.net/10648/093da5cb-618b-41d7-abdc-d3691f566201\">http://hdl.handle.net/10648/093da5cb-618b-41d7-abdc-d3691f566201</a>"
+                        }
+                    ],
+                    "height": 6353,
+                    "width": 8889,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "resource": {
+                                "@id": "https://service.archief.nl/iipsrv?IIIF=//f8/1b/41/4c/3b/83/49/8f/97/08/33/44/73/8c/58/04/0da051ec-4f2d-4603-a990-d99be2eb0350.jp2/full/full/0/default.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 6353,
+                                "width": 8889,
+                                "service": {
+                                    "@context": "http://iiif.io/api/image/2/context.json",
+                                    "@id": "https://service.archief.nl/iipsrv?IIIF=//f8/1b/41/4c/3b/83/49/8f/97/08/33/44/73/8c/58/04/0da051ec-4f2d-4603-a990-d99be2eb0350.jp2",
+                                    "profile": "http://iiif.io/api/image/2/level2.json"
+                                }
+                            },
+                            "on": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.2/226.json/canvas/p1"
+                        }
+                    ]
+                },
+                {
+                    "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.2/227.json/canvas/p1",
+                    "@type": "sc:Canvas",
+                    "label": "227 - Kaart van de Kust van Decan van Sualy tot Rajapoer.",
+                    "metadata": [
+                        {
+                            "label": "Label",
+                            "value": "NL-HaNA_4.VEL_227"
+                        },
+                        {
+                            "label": "Identifier",
+                            "value": "227"
+                        },
+                        {
+                            "label": "Title",
+                            "value": "Kaart van de Kust van Decan van Sualy tot Rajapoer."
+                        },
+                        {
+                            "label": "Date",
+                            "value": "1700/1800"
+                        },
+                        {
+                            "label": "Permalink",
+                            "value": "<a href=\"http://hdl.handle.net/10648/86bf7aaa-8076-4f36-aa27-3562fb9423d0\">http://hdl.handle.net/10648/86bf7aaa-8076-4f36-aa27-3562fb9423d0</a>"
+                        }
+                    ],
+                    "height": 12619,
+                    "width": 10177,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "resource": {
+                                "@id": "https://service.archief.nl/iipsrv?IIIF=//00/d6/89/09/4a/45/47/f3/97/54/22/8c/e1/b4/f7/89/aacc357e-f1bd-49f5-8397-aa2caaa59292.jp2/full/full/0/default.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 12619,
+                                "width": 10177,
+                                "service": {
+                                    "@context": "http://iiif.io/api/image/2/context.json",
+                                    "@id": "https://service.archief.nl/iipsrv?IIIF=//00/d6/89/09/4a/45/47/f3/97/54/22/8c/e1/b4/f7/89/aacc357e-f1bd-49f5-8397-aa2caaa59292.jp2",
+                                    "profile": "http://iiif.io/api/image/2/level2.json"
+                                }
+                            },
+                            "on": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.2/227.json/canvas/p1"
+                        }
+                    ]
+                },
+                {
+                    "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.2/228.json/canvas/p1",
+                    "@type": "sc:Canvas",
+                    "label": "228 - Kaart van de Baai en Kust by Goa.",
+                    "metadata": [
+                        {
+                            "label": "Label",
+                            "value": "NL-HaNA_4.VEL_228"
+                        },
+                        {
+                            "label": "Identifier",
+                            "value": "228"
+                        },
+                        {
+                            "label": "Title",
+                            "value": "Kaart van de Baai en Kust by Goa."
+                        },
+                        {
+                            "label": "Date",
+                            "value": "1600/1700"
+                        },
+                        {
+                            "label": "Permalink",
+                            "value": "<a href=\"http://hdl.handle.net/10648/cbfda6aa-30f2-4c8a-ac24-e67cd69912dc\">http://hdl.handle.net/10648/cbfda6aa-30f2-4c8a-ac24-e67cd69912dc</a>"
+                        }
+                    ],
+                    "height": 6151,
+                    "width": 8923,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "resource": {
+                                "@id": "https://service.archief.nl/iipsrv?IIIF=//f8/ed/96/55/f9/c9/4b/5a/ab/12/5a/6b/3d/80/e7/fb/2631c275-9e08-4244-9799-3978cf95f99e.jp2/full/full/0/default.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 6151,
+                                "width": 8923,
+                                "service": {
+                                    "@context": "http://iiif.io/api/image/2/context.json",
+                                    "@id": "https://service.archief.nl/iipsrv?IIIF=//f8/ed/96/55/f9/c9/4b/5a/ab/12/5a/6b/3d/80/e7/fb/2631c275-9e08-4244-9799-3978cf95f99e.jp2",
+                                    "profile": "http://iiif.io/api/image/2/level2.json"
+                                }
+                            },
+                            "on": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.2/228.json/canvas/p1"
+                        }
+                    ]
+                },
+                {
+                    "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.6/256.json/canvas/p1",
+                    "@type": "sc:Canvas",
+                    "label": "256 - Kaart van de Kust van Bengale, van P. Palmeris tot de Rivier Arakan.",
+                    "metadata": [
+                        {
+                            "label": "Label",
+                            "value": "NL-HaNA_4.VEL_256"
+                        },
+                        {
+                            "label": "Identifier",
+                            "value": "256"
+                        },
+                        {
+                            "label": "Title",
+                            "value": "Kaart van de Kust van Bengale, van P. Palmeris tot de Rivier Arakan."
+                        },
+                        {
+                            "label": "Date",
+                            "value": "1600/1700"
+                        },
+                        {
+                            "label": "Permalink",
+                            "value": "<a href=\"http://hdl.handle.net/10648/83cd6a8f-1720-4629-b11a-8d27a9612e01\">http://hdl.handle.net/10648/83cd6a8f-1720-4629-b11a-8d27a9612e01</a>"
+                        }
+                    ],
+                    "height": 6370,
+                    "width": 8897,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "resource": {
+                                "@id": "https://service.archief.nl/iipsrv?IIIF=//5d/03/f0/2c/af/87/46/60/ba/32/4c/99/bd/b7/9d/c4/7693f0f0-541d-4c55-8747-a3af9f8830e2.jp2/full/full/0/default.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 6370,
+                                "width": 8897,
+                                "service": {
+                                    "@context": "http://iiif.io/api/image/2/context.json",
+                                    "@id": "https://service.archief.nl/iipsrv?IIIF=//5d/03/f0/2c/af/87/46/60/ba/32/4c/99/bd/b7/9d/c4/7693f0f0-541d-4c55-8747-a3af9f8830e2.jp2",
+                                    "profile": "http://iiif.io/api/image/2/level2.json"
+                                }
+                            },
+                            "on": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.6/256.json/canvas/p1"
+                        }
+                    ]
+                },
+                {
+                    "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.6/257.json/canvas/p1",
+                    "@type": "sc:Canvas",
+                    "label": "257 - Kaart van Bengale, van P. Palmeris tot Martavan (Pegu).",
+                    "metadata": [
+                        {
+                            "label": "Label",
+                            "value": "NL-HaNA_4.VEL_257"
+                        },
+                        {
+                            "label": "Identifier",
+                            "value": "257"
+                        },
+                        {
+                            "label": "Title",
+                            "value": "Kaart van Bengale, van P. Palmeris tot Martavan (Pegu)."
+                        },
+                        {
+                            "label": "Date",
+                            "value": "1600/1700"
+                        },
+                        {
+                            "label": "Permalink",
+                            "value": "<a href=\"http://hdl.handle.net/10648/bd8a0046-f445-43ad-8dd1-e9d65d9d7bd0\">http://hdl.handle.net/10648/bd8a0046-f445-43ad-8dd1-e9d65d9d7bd0</a>"
+                        }
+                    ],
+                    "height": 6353,
+                    "width": 8897,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "resource": {
+                                "@id": "https://service.archief.nl/iipsrv?IIIF=//92/e2/56/05/06/f3/41/2f/81/dd/32/6b/5e/a4/2a/c2/6e01e745-cbd8-4fe8-a24d-e0153e3186f4.jp2/full/full/0/default.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 6353,
+                                "width": 8897,
+                                "service": {
+                                    "@context": "http://iiif.io/api/image/2/context.json",
+                                    "@id": "https://service.archief.nl/iipsrv?IIIF=//92/e2/56/05/06/f3/41/2f/81/dd/32/6b/5e/a4/2a/c2/6e01e745-cbd8-4fe8-a24d-e0153e3186f4.jp2",
+                                    "profile": "http://iiif.io/api/image/2/level2.json"
+                                }
+                            },
+                            "on": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.6/257.json/canvas/p1"
+                        }
+                    ]
+                },
+                {
+                    "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.6/258.json/canvas/p1",
+                    "@type": "sc:Canvas",
+                    "label": "258 - Kaart van de Rivier van Bengalen, van de Mond tot de Hollandsche Logie (Hougly).",
+                    "metadata": [
+                        {
+                            "label": "Label",
+                            "value": "NL-HaNA_4.VEL_258"
+                        },
+                        {
+                            "label": "Identifier",
+                            "value": "258"
+                        },
+                        {
+                            "label": "Title",
+                            "value": "Kaart van de Rivier van Bengalen, van de Mond tot de Hollandsche Logie (Hougly)."
+                        },
+                        {
+                            "label": "Date",
+                            "value": "1600/1700"
+                        },
+                        {
+                            "label": "Permalink",
+                            "value": "<a href=\"http://hdl.handle.net/10648/4e0a30a4-09f5-4a5f-88f2-3f7fcd5091d4\">http://hdl.handle.net/10648/4e0a30a4-09f5-4a5f-88f2-3f7fcd5091d4</a>"
+                        }
+                    ],
+                    "height": 6319,
+                    "width": 8847,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "resource": {
+                                "@id": "https://service.archief.nl/iipsrv?IIIF=//9a/2e/6a/9b/90/f6/46/09/9c/29/21/45/80/8c/c7/22/8c504743-2143-4e53-8f67-1f38ec4674f0.jp2/full/full/0/default.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 6319,
+                                "width": 8847,
+                                "service": {
+                                    "@context": "http://iiif.io/api/image/2/context.json",
+                                    "@id": "https://service.archief.nl/iipsrv?IIIF=//9a/2e/6a/9b/90/f6/46/09/9c/29/21/45/80/8c/c7/22/8c504743-2143-4e53-8f67-1f38ec4674f0.jp2",
+                                    "profile": "http://iiif.io/api/image/2/level2.json"
+                                }
+                            },
+                            "on": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.6/258.json/canvas/p1"
+                        }
+                    ]
+                },
+                {
+                    "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.6/259.json/canvas/p1",
+                    "@type": "sc:Canvas",
+                    "label": "259 - Kaart van de Rivier de Ganges getrocken uyt een Moorsche Kaart.",
+                    "metadata": [
+                        {
+                            "label": "Label",
+                            "value": "NL-HaNA_4.VEL_259"
+                        },
+                        {
+                            "label": "Identifier",
+                            "value": "259"
+                        },
+                        {
+                            "label": "Title",
+                            "value": "Kaart van de Rivier de Ganges getrocken uyt een Moorsche Kaart."
+                        },
+                        {
+                            "label": "Date",
+                            "value": "1600/1700"
+                        },
+                        {
+                            "label": "Permalink",
+                            "value": "<a href=\"http://hdl.handle.net/10648/de3bc2fd-8e97-4602-a767-4d71ee14c1bb\">http://hdl.handle.net/10648/de3bc2fd-8e97-4602-a767-4d71ee14c1bb</a>"
+                        }
+                    ],
+                    "height": 6344,
+                    "width": 8940,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "resource": {
+                                "@id": "https://service.archief.nl/iipsrv?IIIF=//a6/b3/8b/0d/84/91/4e/2b/a6/bd/d1/a4/5c/62/3b/d1/cf16b723-968e-4ee1-855d-0c648b1a6608.jp2/full/full/0/default.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 6344,
+                                "width": 8940,
+                                "service": {
+                                    "@context": "http://iiif.io/api/image/2/context.json",
+                                    "@id": "https://service.archief.nl/iipsrv?IIIF=//a6/b3/8b/0d/84/91/4e/2b/a6/bd/d1/a4/5c/62/3b/d1/cf16b723-968e-4ee1-855d-0c648b1a6608.jp2",
+                                    "profile": "http://iiif.io/api/image/2/level2.json"
+                                }
+                            },
+                            "on": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.6/259.json/canvas/p1"
+                        }
+                    ]
+                },
+                {
+                    "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.6/261.json/canvas/p1",
+                    "@type": "sc:Canvas",
+                    "label": "261 - Kaart van de Rivier van Arakan, van de Mond tot de Stad van dien naam.",
+                    "metadata": [
+                        {
+                            "label": "Label",
+                            "value": "NL-HaNA_4.VEL_261"
+                        },
+                        {
+                            "label": "Identifier",
+                            "value": "261"
+                        },
+                        {
+                            "label": "Title",
+                            "value": "Kaart van de Rivier van Arakan, van de Mond tot de Stad van dien naam."
+                        },
+                        {
+                            "label": "Date",
+                            "value": "1600/1700"
+                        },
+                        {
+                            "label": "Permalink",
+                            "value": "<a href=\"http://hdl.handle.net/10648/95c05e7c-e3ff-4ca3-8e85-c027b58b2da7\">http://hdl.handle.net/10648/95c05e7c-e3ff-4ca3-8e85-c027b58b2da7</a>"
+                        }
+                    ],
+                    "height": 6378,
+                    "width": 8813,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "resource": {
+                                "@id": "https://service.archief.nl/iipsrv?IIIF=//b4/4e/7a/0a/e8/0a/4d/95/9a/c7/87/c3/20/87/dd/1b/f68d9f7b-7b01-4846-8765-1ef0ebc40dd9.jp2/full/full/0/default.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 6378,
+                                "width": 8813,
+                                "service": {
+                                    "@context": "http://iiif.io/api/image/2/context.json",
+                                    "@id": "https://service.archief.nl/iipsrv?IIIF=//b4/4e/7a/0a/e8/0a/4d/95/9a/c7/87/c3/20/87/dd/1b/f68d9f7b-7b01-4846-8765-1ef0ebc40dd9.jp2",
+                                    "profile": "http://iiif.io/api/image/2/level2.json"
+                                }
+                            },
+                            "on": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.6/261.json/canvas/p1"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
