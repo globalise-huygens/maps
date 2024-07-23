@@ -414,6 +414,17 @@ def to_manifest(
                         anno_page_id=f"{manifest_id}/canvas/p{n}/annotationpage",
                         metadata=metadata,
                     )
+                elif e.response.status_code == 500:
+                    print("500 error, skipping")
+
+                    # Add placeholder canvas (empty)
+                    manifest.make_canvas(
+                        id=canvas_id,
+                        label=base_file_name,
+                        anno_id=f"{manifest_id}/canvas/p{n}/anno",
+                        anno_page_id=f"{manifest_id}/canvas/p{n}/annotationpage",
+                        metadata=metadata,
+                    )
                 else:
                     raise e
 
@@ -494,9 +505,19 @@ def parse_ead(ead_file_path: str, filter_codes: set = set()) -> Fonds:
     )
 
     series_els = tree.findall(".//c[@level='series']")
-    for series_el in series_els:
-        s = get_series(series_el, filter_codes=filter_codes)
-        fonds.hasPart.append(s)
+    subseries_els = tree.findall(".//dsc[@type='combined']/c[@level='subseries']")
+    dsc_el = tree.find(".//dsc[@type='combined']")
+    if series_els:
+        for series_el in series_els:
+            s = get_series(series_el, filter_codes=filter_codes)
+            fonds.hasPart.append(s)
+    elif subseries_els:
+        for subseries_el in subseries_els:
+            s = get_series(subseries_el, filter_codes=filter_codes)
+            fonds.hasPart.append(s)
+    elif dsc_el is not None:
+        parts = get_file_and_filegrp_els(dsc_el, filter_codes=filter_codes)
+        fonds.hasPart += parts
 
     return fonds
 
@@ -596,7 +617,7 @@ def get_file(file_el, filter_codes: set = set()) -> File | None:
         title = title.replace("  ", " ")
 
     # Date
-    date_el = did.find("unittitle/unitdate")
+    date_el = did.find("unitdate")
     if date_el is not None:
         date = date_el.attrib.get("normal", date_el.attrib.get("text"))
     else:
@@ -663,10 +684,16 @@ def main(
 
 if __name__ == "__main__":
     # Inventories
-    main(
-        ead_file_path="data/NA/ead/4.TOPO.xml",
-        base_url_manifests="https://data.globalise.huygens.knaw.nl/manifests/maps/",
-        base_url_collections="https://data.globalise.huygens.knaw.nl/manifests/maps/",
-        target_dir="maps/",
-        use_filegroup=True,
-    )
+
+    for path in [
+        # data/NA/ead/4.AANW.xml data/NA/ead/4.AKF.xml data/NA/ead/4.BRF.xml data/NA/ead/4.JSF.xml data/NA/ead/4.MCAL.xml
+        "data/NA/ead/4.VEL.xml"
+    ]:
+
+        main(
+            ead_file_path=path,
+            base_url_manifests="https://data.globalise.huygens.knaw.nl/manifests/maps/",
+            base_url_collections="https://data.globalise.huygens.knaw.nl/manifests/maps/",
+            target_dir="maps/",
+            use_filegroup=True,
+        )
