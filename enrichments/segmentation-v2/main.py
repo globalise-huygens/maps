@@ -11,22 +11,22 @@ from pycocotools import mask as mask_utils
 from sam2.build_sam import build_sam2
 from sam2.automatic_mask_generator import SAM2AutomaticMaskGenerator
 
+import cv2
 from PIL import Image
 import numpy as np
-
-# import cv2
 
 Image.MAX_IMAGE_PIXELS = None  # Disable DecompressionBombError
 
 MODEL = "./model/sam2_hiera_large.pt"  # large model
-MODEL_TYPE = "vit_l"
-DEVICE = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+MODEL_TYPE = "sam2_hiera_l.yaml"
+DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
 # Thresholds
 IOU = 0.9
 STABILITY = 0.8
-AREA_THRESHOLD = 100
-BORDER_THRESHOLD = 0
+MIN_AREA_THRESHOLD = 100
+MAX_AREA_THRESHOLD = 0.9  # 90% of the image
+BORDER_THRESHOLD = 5
 
 ncounter = count()
 
@@ -122,6 +122,7 @@ def process_image(
     output_web_annotation: bool = True,
     border_threshold: int = BORDER_THRESHOLD,
     folder_prefix: str = "",
+    max_area_threshold: float = MAX_AREA_THRESHOLD,
 ):
 
     f_i = 1 / resize_factor
@@ -174,22 +175,33 @@ def process_image(
         r_y1 = int(r_y1)
         r_y2 = r_y1 + int(r_h)
 
+        # if (  # Check if the object is too close to the border of the cutout
+        #     r_x1 <= border_threshold
+        #     or r_y1 <= border_threshold
+        #     or r_x2 >= width - border_threshold
+        #     or r_y2 >= height - border_threshold
+        # ) and not (  # it's fine if it's close to the border of the original image
+        #     r_x1 + x == 0
+        #     or r_y1 + y == 0
+        #     or r_x2 + x == original_width
+        #     or r_y2 + y == original_height
+        # ):
+
         if (  # Check if the object is too close to the border of the cutout
             r_x1 <= border_threshold
             or r_y1 <= border_threshold
             or r_x2 >= width - border_threshold
             or r_y2 >= height - border_threshold
-        ) and not (  # it's fine if it's close to the border of the original image
-            r_x1 + x == 0
-            or r_y1 + y == 0
-            or r_x2 + x == original_width
-            or r_y2 + y == original_height
         ):
             continue
 
         # Only keep the mask for the bbox
         m = mask_utils.decode(r["segmentation"])
         # m = m[r_y1:r_y2, r_x1:r_x2]
+
+        # Check max area threshold of mask
+        if m.sum() >= max_area_threshold * width * height:
+            continue
 
         # # Transform according to the resize factor
         # m = cv2.resize(m, None, fx=f_i, fy=f_i)
@@ -266,8 +278,6 @@ def process_image(
 
             if output_web_annotation:
 
-                import cv2
-
                 contours, _ = cv2.findContours(
                     mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE
                 )
@@ -281,6 +291,9 @@ def process_image(
                 contour = max(contours, key=cv2.contourArea)
 
                 points = contour.squeeze().tolist()
+
+                # correct for offset
+                points = [[x + data["x"], y + data["y"]] for x, y in points]
 
                 # convert the contour to svg polygon
                 svg = getSVG(points)
@@ -321,21 +334,22 @@ def main(
     images: list,
     output_folder: str,
     window_size: int = 1000,  # to take VRAM into account
-    step_size: int = 500,
+    step_size: int = 750,
     model: str = MODEL,
     model_type: str = MODEL_TYPE,
     device: str = DEVICE,
     iou: float = IOU,
     stability: float = STABILITY,
-    area_threshold: int = AREA_THRESHOLD,
+    min_area_threshold: int = MIN_AREA_THRESHOLD,
+    max_area_threshold: int = MAX_AREA_THRESHOLD,
 ):
     # sam = sam_model_registry[model_type](checkpoint=model)
     # sam.to(device=device)
 
     sam2 = build_sam2(
-        "sam2_hiera_l.yaml",
+        model_type,
         model,
-        device="cuda",
+        device=device,
         apply_postprocessing=True,
     )
 
@@ -351,7 +365,7 @@ def main(
         sam2,
         pred_iou_thresh=iou,
         stability_score_thresh=stability,
-        min_mask_region_area=area_threshold,
+        min_mask_region_area=min_area_threshold,
         output_mode="coco_rle",
     )
 
@@ -377,9 +391,14 @@ def main(
 
         for f, resized_image in resized_images:
 
+            # n_temp = 0
+
             for x, y, cutout in get_image_cutouts(
                 resized_image, window_size, step_size
             ):
+
+                # n_temp += 1
+
                 result = process_image(
                     cutout,
                     x=x,
@@ -391,11 +410,13 @@ def main(
                     mask_generator=mask_generator,
                     output_folder=image_output_folder,
                     folder_prefix=f'{"%.4f" % f}',
+                    max_area_threshold=max_area_threshold,
                 )
 
                 data["cutouts"].append(result)
 
-                break
+                # if n_temp > 2:
+                #     break
 
         with open(
             os.path.join(image_output_folder, f"{image_name_without_extension}.json"),
