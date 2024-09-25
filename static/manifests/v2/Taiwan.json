@@ -11,7 +11,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.16/301.json/canvas/p1",
                     "@type": "sc:Canvas",
-                    "label": "301 - Pascaert, waarin verthoont de gelegentheyt van Pehouw tot het Eylandt Tayowan en Wankan, ende Visschersbaey enz.",
+                    "label": "NL-HaNA_4.VEL_301 - 301 - Pascaert, waarin verthoont de gelegentheyt van Pehouw tot het Eylandt Tayowan en Wankan, ende Visschersbaey enz.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -59,7 +59,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.16/302.json/canvas/p1",
                     "@type": "sc:Canvas",
-                    "label": "302 - Pascaert, waerin verthoont wort de gelegentheyt van Tayoan enz.",
+                    "label": "NL-HaNA_4.VEL_302 - 302 - Pascaert, waerin verthoont wort de gelegentheyt van Tayoan enz.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -107,7 +107,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.16/303.json/canvas/p1",
                     "@type": "sc:Canvas",
-                    "label": "303 - Pascaert, waerin verthoont wort de gelegentheyt van Tayoan enz.",
+                    "label": "NL-HaNA_4.VEL_303 - 303 - Pascaert, waerin verthoont wort de gelegentheyt van Tayoan enz.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -155,7 +155,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.16/304.json/canvas/p1",
                     "@type": "sc:Canvas",
-                    "label": "304 - Packan (Formosa), alsoo 'tselve beseylt door Jacob Noordeloos.",
+                    "label": "NL-HaNA_4.VEL_304 - 304 - Packan (Formosa), alsoo 'tselve beseylt door Jacob Noordeloos.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -203,7 +203,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.16/305.json/canvas/p1",
                     "@type": "sc:Canvas",
-                    "label": "305 - Kaart van de reven enz., voor de Stad Zeelandia enz.",
+                    "label": "NL-HaNA_4.VEL_305 - 305 - Kaart van de reven enz., voor de Stad Zeelandia enz.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -251,7 +251,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.16/306.json/canvas/p1",
                     "@type": "sc:Canvas",
-                    "label": "306 - Affteyckeninghe van de Baye van Tayuwan enz.",
+                    "label": "NL-HaNA_4.VEL_306 - 306 - Affteyckeninghe van de Baye van Tayuwan enz.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -299,7 +299,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.16/307.json/canvas/p1",
                     "@type": "sc:Canvas",
-                    "label": "307 - Kaart van de Noordkust van het Eiland Formosa met het Eiland Kelang.",
+                    "label": "NL-HaNA_4.VEL_307 - 307 - Kaart van de Noordkust van het Eiland Formosa met het Eiland Kelang.",
                     "metadata": [
                         {
                             "label": "Label",

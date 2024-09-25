@@ -11,7 +11,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.2/223.json/canvas/p1",
                     "@type": "sc:Canvas",
-                    "label": "223 - Kaart van de kust van Dekan en Canare, van de Kom van Sualy (Soeratte) tot de Rivier Pen.",
+                    "label": "NL-HaNA_4.VEL_223 - 223 - Kaart van de kust van Dekan en Canare, van de Kom van Sualy (Soeratte) tot de Rivier Pen.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -59,7 +59,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.2/224-224A.json/canvas/p1",
                     "@type": "sc:Canvas",
-                    "label": "224-224A - Een Zeekaart van de Kust alwaar den Piraad Cangi Angria zig onthoudt (van Schreyershoek tot de rivier Sangisser)",
+                    "label": "NL-HaNA_4.VEL_224 - 224-224A - Een Zeekaart van de Kust alwaar den Piraad Cangi Angria zig onthoudt (van Schreyershoek tot de rivier Sangisser)",
                     "metadata": [
                         {
                             "label": "Label",
@@ -107,7 +107,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.2/224-224A.json/canvas/p2",
                     "@type": "sc:Canvas",
-                    "label": "224-224A - Een Zeekaart van de Kust alwaar den Piraad Cangi Angria zig onthoudt (van Schreyershoek tot de rivier Sangisser)",
+                    "label": "NL-HaNA_4.VEL_224A - 224-224A - Een Zeekaart van de Kust alwaar den Piraad Cangi Angria zig onthoudt (van Schreyershoek tot de rivier Sangisser)",
                     "metadata": [
                         {
                             "label": "Label",
@@ -155,7 +155,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.2/225.json/canvas/p1",
                     "@type": "sc:Canvas",
-                    "label": "225 - Kaart van de rivier Souratte.",
+                    "label": "NL-HaNA_4.VEL_225 - 225 - Kaart van de rivier Souratte.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -203,7 +203,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.2/226.json/canvas/p1",
                     "@type": "sc:Canvas",
-                    "label": "226 - Kaart van Gouzaratte, Cucan of Visiapoer, van R. Pilatus tot Dabul.",
+                    "label": "NL-HaNA_4.VEL_226 - 226 - Kaart van Gouzaratte, Cucan of Visiapoer, van R. Pilatus tot Dabul.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -251,7 +251,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.2/227.json/canvas/p1",
                     "@type": "sc:Canvas",
-                    "label": "227 - Kaart van de Kust van Decan van Sualy tot Rajapoer.",
+                    "label": "NL-HaNA_4.VEL_227 - 227 - Kaart van de Kust van Decan van Sualy tot Rajapoer.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -299,7 +299,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.2/228.json/canvas/p1",
                     "@type": "sc:Canvas",
-                    "label": "228 - Kaart van de Baai en Kust by Goa.",
+                    "label": "NL-HaNA_4.VEL_228 - 228 - Kaart van de Baai en Kust by Goa.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -347,7 +347,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.6/256.json/canvas/p1",
                     "@type": "sc:Canvas",
-                    "label": "256 - Kaart van de Kust van Bengale, van P. Palmeris tot de Rivier Arakan.",
+                    "label": "NL-HaNA_4.VEL_256 - 256 - Kaart van de Kust van Bengale, van P. Palmeris tot de Rivier Arakan.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -395,7 +395,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.6/257.json/canvas/p1",
                     "@type": "sc:Canvas",
-                    "label": "257 - Kaart van Bengale, van P. Palmeris tot Martavan (Pegu).",
+                    "label": "NL-HaNA_4.VEL_257 - 257 - Kaart van Bengale, van P. Palmeris tot Martavan (Pegu).",
                     "metadata": [
                         {
                             "label": "Label",
@@ -443,7 +443,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.6/258.json/canvas/p1",
                     "@type": "sc:Canvas",
-                    "label": "258 - Kaart van de Rivier van Bengalen, van de Mond tot de Hollandsche Logie (Hougly).",
+                    "label": "NL-HaNA_4.VEL_258 - 258 - Kaart van de Rivier van Bengalen, van de Mond tot de Hollandsche Logie (Hougly).",
                     "metadata": [
                         {
                             "label": "Label",
@@ -491,7 +491,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.6/259.json/canvas/p1",
                     "@type": "sc:Canvas",
-                    "label": "259 - Kaart van de Rivier de Ganges getrocken uyt een Moorsche Kaart.",
+                    "label": "NL-HaNA_4.VEL_259 - 259 - Kaart van de Rivier de Ganges getrocken uyt een Moorsche Kaart.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -539,7 +539,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.6/261.json/canvas/p1",
                     "@type": "sc:Canvas",
-                    "label": "261 - Kaart van de Rivier van Arakan, van de Mond tot de Stad van dien naam.",
+                    "label": "NL-HaNA_4.VEL_261 - 261 - Kaart van de Rivier van Arakan, van de Mond tot de Stad van dien naam.",
                     "metadata": [
                         {
                             "label": "Label",

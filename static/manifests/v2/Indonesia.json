@@ -11,7 +11,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/372.json/canvas/p1",
                     "@type": "sc:Canvas",
-                    "label": "372 - Kaart van de Noordkust van Java, van Ondjong Java tot en met de Straat van Madure.",
+                    "label": "NL-HaNA_4.VEL_372 - 372 - Kaart van de Noordkust van Java, van Ondjong Java tot en met de Straat van Madure.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -59,7 +59,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/373.json/canvas/p1",
                     "@type": "sc:Canvas",
-                    "label": "373 - Kaart van de Noordkust van Java, van St. Nicolaesbay tot Tanjong Priock en de daarvoor liggende Eilandjes.",
+                    "label": "NL-HaNA_4.VEL_373 - 373 - Kaart van de Noordkust van Java, van St. Nicolaesbay tot Tanjong Priock en de daarvoor liggende Eilandjes.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -107,7 +107,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/374.json/canvas/p1",
                     "@type": "sc:Canvas",
-                    "label": "374 - Kaart van de Noordkust van Java, van Geertruyts Eyland tot aande hoek van Crawang, met de daarvoor liggende kleinere Eilanden.",
+                    "label": "NL-HaNA_4.VEL_374 - 374 - Kaart van de Noordkust van Java, van Geertruyts Eyland tot aande hoek van Crawang, met de daarvoor liggende kleinere Eilanden.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -155,7 +155,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/375.json/canvas/p1",
                     "@type": "sc:Canvas",
-                    "label": "375 - Kaart van de Noordkust van Java, van Geertruyts Eyland tot aande hoek van Crawang, met de daarvoor liggende kleinere Eilanden.",
+                    "label": "NL-HaNA_4.VEL_375 - 375 - Kaart van de Noordkust van Java, van Geertruyts Eyland tot aande hoek van Crawang, met de daarvoor liggende kleinere Eilanden.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -203,7 +203,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/376.json/canvas/p1",
                     "@type": "sc:Canvas",
-                    "label": "376 - Kaart van de Noordkust van Java, van Geertruyts Eiland tot aan Brenong.",
+                    "label": "NL-HaNA_4.VEL_376 - 376 - Kaart van de Noordkust van Java, van Geertruyts Eiland tot aan Brenong.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -251,7 +251,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/377.json/canvas/p1",
                     "@type": "sc:Canvas",
-                    "label": "377 - Nieuwe Verkenkaart, strekkende van Batavia tot Bantam, naar de nieuwste bevinding verbeterd.",
+                    "label": "NL-HaNA_4.VEL_377 - 377 - Nieuwe Verkenkaart, strekkende van Batavia tot Bantam, naar de nieuwste bevinding verbeterd.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -299,7 +299,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/378.json/canvas/p1",
                     "@type": "sc:Canvas",
-                    "label": "378 - Kaart van de Bogt van Bantam tot aan de tweede Versche River.",
+                    "label": "NL-HaNA_4.VEL_378 - 378 - Kaart van de Bogt van Bantam tot aan de tweede Versche River.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -347,7 +347,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/379.json/canvas/p1",
                     "@type": "sc:Canvas",
-                    "label": "379 - Kaart van de Kust van Java van de Hoek van de Drie Heuvels tot aan ... ?",
+                    "label": "NL-HaNA_4.VEL_379 - 379 - Kaart van de Kust van Java van de Hoek van de Drie Heuvels tot aan ... ?",
                     "metadata": [
                         {
                             "label": "Label",
@@ -395,7 +395,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/380.json/canvas/p1",
                     "@type": "sc:Canvas",
-                    "label": "380 - Kaart van een gedeelte van de Kust by Bantam.",
+                    "label": "NL-HaNA_4.VEL_380 - 380 - Kaart van een gedeelte van de Kust by Bantam.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -443,7 +443,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/381.json/canvas/p1",
                     "@type": "sc:Canvas",
-                    "label": "381 - Kaart van een gedeelte van de Noordkust van Java, tusschen Tanjong Awoerang en Tanjong Carawang.",
+                    "label": "NL-HaNA_4.VEL_381 - 381 - Kaart van een gedeelte van de Noordkust van Java, tusschen Tanjong Awoerang en Tanjong Carawang.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -491,7 +491,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/382.json/canvas/p1",
                     "@type": "sc:Canvas",
-                    "label": "382 - Kaart van de Reede van Batavia met de verschillende vaarwaters naar dezelve, trigonometrisch opgenomen",
+                    "label": "NL-HaNA_4.VEL_382 - 382 - Kaart van de Reede van Batavia met de verschillende vaarwaters naar dezelve, trigonometrisch opgenomen",
                     "metadata": [
                         {
                             "label": "Label",
@@ -539,7 +539,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p1",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_383 - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -587,7 +587,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p2",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_384 - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -635,7 +635,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p3",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_385A_DICHT - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -683,7 +683,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p4",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_385A_OPEN - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -731,7 +731,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p5",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_385B - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -779,7 +779,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p6",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_385C - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -827,7 +827,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p7",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_385D_DICHT - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -875,7 +875,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p8",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_385D_OPEN - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -923,7 +923,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p9",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_385E_DICHT - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -971,7 +971,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p10",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_385E_OPEN - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -1019,7 +1019,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p11",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_386 - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -1067,7 +1067,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p12",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_388A - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -1115,7 +1115,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p13",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_388B - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -1163,7 +1163,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p14",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_388C - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -1211,7 +1211,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p15",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_388D - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -1259,7 +1259,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p16",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_388E - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -1307,7 +1307,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p17",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_388F - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -1355,7 +1355,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p18",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_388G - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -1403,7 +1403,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p19",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_388H - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -1451,7 +1451,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p20",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_389A - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -1499,7 +1499,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p21",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_389B - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -1547,7 +1547,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p22",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_390 - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -1595,7 +1595,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p23",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_391A - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -1643,7 +1643,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p24",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_391B - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -1691,7 +1691,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p25",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_392A - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -1739,7 +1739,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p26",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_392B - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -1787,7 +1787,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p27",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_393A - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -1835,7 +1835,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p28",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_393B - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -1883,7 +1883,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p29",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_394 - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -1931,7 +1931,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p30",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_395A - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -1979,7 +1979,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p31",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_395B - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -2027,7 +2027,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p32",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_395C - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -2075,7 +2075,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p33",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_395D - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -2123,7 +2123,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p34",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_396 - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -2171,7 +2171,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p35",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_397A - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -2219,7 +2219,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p36",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_397B - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -2267,7 +2267,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p37",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_398A - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -2315,7 +2315,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p38",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_398B - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -2363,7 +2363,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p39",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_399A - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -2411,7 +2411,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p40",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_399B - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -2459,7 +2459,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p41",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_400A - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -2507,7 +2507,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p42",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_400B - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -2555,7 +2555,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p43",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_400C - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -2603,7 +2603,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p44",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_400D - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -2651,7 +2651,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p45",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_401A - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -2699,7 +2699,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p46",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_401B - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -2747,7 +2747,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p47",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_401C - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -2795,7 +2795,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p48",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_401D - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -2843,7 +2843,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p49",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_402A - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -2891,7 +2891,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p50",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_402B - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -2939,7 +2939,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p51",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_402C - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -2987,7 +2987,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p52",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_402D - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -3035,7 +3035,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p53",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_402E - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -3083,7 +3083,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p54",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_402F - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -3131,7 +3131,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p55",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_403A - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -3179,7 +3179,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p56",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_403B - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -3227,7 +3227,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p57",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_403C - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -3275,7 +3275,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p58",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_403D - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -3323,7 +3323,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p59",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_404A - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -3371,7 +3371,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p60",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_404B - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -3419,7 +3419,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p61",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_405A - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -3467,7 +3467,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p62",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_405B - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -3515,7 +3515,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p63",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_406A - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -3563,7 +3563,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p64",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_406B - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -3611,7 +3611,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p65",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_406C - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -3659,7 +3659,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p66",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_407A - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -3707,7 +3707,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p67",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_407B - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -3755,7 +3755,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p68",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_407C - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -3803,7 +3803,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p69",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_407D - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -3851,7 +3851,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p70",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_408 - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -3899,7 +3899,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p71",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_409A - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -3947,7 +3947,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p72",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_409B - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -3995,7 +3995,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p73",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_409C - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -4043,7 +4043,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p74",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_409D - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -4091,7 +4091,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p75",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_410A - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -4139,7 +4139,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p76",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_410B - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -4187,7 +4187,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p77",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_410C - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -4235,7 +4235,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p78",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_410D - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -4283,7 +4283,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p79",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_411A - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -4331,7 +4331,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p80",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_411B - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -4379,7 +4379,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p81",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_411C - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -4427,7 +4427,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p82",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_411D - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -4475,7 +4475,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p83",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_412 - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -4523,7 +4523,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p84",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_413 - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -4571,7 +4571,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p85",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_414 - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -4619,7 +4619,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p86",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_415A - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -4667,7 +4667,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p87",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_415B - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -4715,7 +4715,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p88",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_416A - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -4763,7 +4763,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p89",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_416B - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -4811,7 +4811,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p90",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_417A - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -4859,7 +4859,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p91",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_417B - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -4907,7 +4907,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p92",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_417C - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -4955,7 +4955,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p93",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_417D - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -5003,7 +5003,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p94",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_418A - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -5051,7 +5051,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p95",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_418B - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -5099,7 +5099,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p96",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_419A - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -5147,7 +5147,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/383-386-388A-419B.json/canvas/p97",
                     "@type": "sc:Canvas",
-                    "label": "383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
+                    "label": "NL-HaNA_4.VEL_419B - 383-386-388A-419B - Kaarten, plans enz., betrekking hebbende op de bank voor de groote Rivier van Batavia.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -5195,7 +5195,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/420.json/canvas/p1",
                     "@type": "sc:Canvas",
-                    "label": "420 - Kaart van de Oesterbank van het Eerw. Collegie van Heeren Heemraden.",
+                    "label": "NL-HaNA_4.VEL_420 - 420 - Kaart van de Oesterbank van het Eerw. Collegie van Heeren Heemraden.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -5243,7 +5243,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/387.json/canvas/p1",
                     "@type": "sc:Canvas",
-                    "label": "387 - Het Westelykste gedeelte van Batavia, tusschen de Groote Rivier en de Posten Ank\u00e9, Kenten en Ryswyk, in verband met de uit te voeren waterwerken.",
+                    "label": "NL-HaNA_4.VEL_387 - 387 - Het Westelykste gedeelte van Batavia, tusschen de Groote Rivier en de Posten Ank\u00e9, Kenten en Ryswyk, in verband met de uit te voeren waterwerken.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -5291,7 +5291,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/421.json/canvas/p1",
                     "@type": "sc:Canvas",
-                    "label": "421 - Kaart van de Stranden en gesamentlyke situatie der bewesten en beoosten 't Kasteel Batavia gelegene landen en tuynen, van den Mond der Rivier Ank\u00e9 af tot voorby den Mond der Rivier van Antsjol en Slingerland.",
+                    "label": "NL-HaNA_4.VEL_421 - 421 - Kaart van de Stranden en gesamentlyke situatie der bewesten en beoosten 't Kasteel Batavia gelegene landen en tuynen, van den Mond der Rivier Ank\u00e9 af tot voorby den Mond der Rivier van Antsjol en Slingerland.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -5339,7 +5339,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/422.json/canvas/p1",
                     "@type": "sc:Canvas",
-                    "label": "422 - Kaart van de Stranden en gesamentlyke situatie der bewesten en beoosten 't Kasteel Batavia gelegene landen en tuynen, van den Mond der Rivier Ank\u00e9 af tot voorby den Mond der Rivier van Antsjol en Slingerland.",
+                    "label": "NL-HaNA_4.VEL_422 - 422 - Kaart van de Stranden en gesamentlyke situatie der bewesten en beoosten 't Kasteel Batavia gelegene landen en tuynen, van den Mond der Rivier Ank\u00e9 af tot voorby den Mond der Rivier van Antsjol en Slingerland.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -5387,7 +5387,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/423.json/canvas/p1",
                     "@type": "sc:Canvas",
-                    "label": "423 - Kaart van een gedeelte van de Noordkust van Java, tusschen Ondjong Java en Lassum.",
+                    "label": "NL-HaNA_4.VEL_423 - 423 - Kaart van een gedeelte van de Noordkust van Java, tusschen Ondjong Java en Lassum.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -5435,7 +5435,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/424-426.json/canvas/p1",
                     "@type": "sc:Canvas",
-                    "label": "424-426 - Kaart van de Noordkust van Java, van Batang tot aan Kading Gaw\u00e9.",
+                    "label": "NL-HaNA_4.VEL_424 - 424-426 - Kaart van de Noordkust van Java, van Batang tot aan Kading Gaw\u00e9.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -5483,7 +5483,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/424-426.json/canvas/p2",
                     "@type": "sc:Canvas",
-                    "label": "424-426 - Kaart van de Noordkust van Java, van Batang tot aan Kading Gaw\u00e9.",
+                    "label": "NL-HaNA_4.VEL_425 - 424-426 - Kaart van de Noordkust van Java, van Batang tot aan Kading Gaw\u00e9.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -5531,7 +5531,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/424-426.json/canvas/p3",
                     "@type": "sc:Canvas",
-                    "label": "424-426 - Kaart van de Noordkust van Java, van Batang tot aan Kading Gaw\u00e9.",
+                    "label": "NL-HaNA_4.VEL_426 - 424-426 - Kaart van de Noordkust van Java, van Batang tot aan Kading Gaw\u00e9.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -5579,7 +5579,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/427-429.json/canvas/p1",
                     "@type": "sc:Canvas",
-                    "label": "427-429 - Kaart van de Noordkust van Java, van Banjer Anjer tot aan Petjerang.",
+                    "label": "NL-HaNA_4.VEL_427 - 427-429 - Kaart van de Noordkust van Java, van Banjer Anjer tot aan Petjerang.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -5627,7 +5627,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/427-429.json/canvas/p2",
                     "@type": "sc:Canvas",
-                    "label": "427-429 - Kaart van de Noordkust van Java, van Banjer Anjer tot aan Petjerang.",
+                    "label": "NL-HaNA_4.VEL_429 - 427-429 - Kaart van de Noordkust van Java, van Banjer Anjer tot aan Petjerang.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -5675,7 +5675,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.20/java/428.json/canvas/p1",
                     "@type": "sc:Canvas",
-                    "label": "428 - Kaart van de Noordkust van Java, van Chiassen (Thassem) tot aan de hoek van Pandok, beoosten Rembang.",
+                    "label": "NL-HaNA_4.VEL_428 - 428 - Kaart van de Noordkust van Java, van Chiassen (Thassem) tot aan de hoek van Pandok, beoosten Rembang.",
                     "metadata": [
                         {
                             "label": "Label",

@@ -115,7 +115,7 @@ def make_manifest_v2(manifest_data, label):
 
         cvs = seq.canvas(
             ident=canvas_id,
-            label=label,
+            label=f"{canvas_label} - {label}",
         )
 
         print(service)

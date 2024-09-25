@@ -11,7 +11,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.10/271.json/canvas/p1",
                     "@type": "sc:Canvas",
-                    "label": "271 - Kaart van een gedeelte der Chinesche Zee en Kust, van Lamtaon tot Avarellos, met het Eiland Formosa enz.",
+                    "label": "NL-HaNA_4.VEL_271 - 271 - Kaart van een gedeelte der Chinesche Zee en Kust, van Lamtaon tot Avarellos, met het Eiland Formosa enz.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -59,7 +59,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.10/272.json/canvas/p1",
                     "@type": "sc:Canvas",
-                    "label": "272 - Kaart van een gedeelte der Chinesche Zee en Kust, van Punta Lampa cao tot de Overveens Eilanden, het Eiland Formosa enz.",
+                    "label": "NL-HaNA_4.VEL_272 - 272 - Kaart van een gedeelte der Chinesche Zee en Kust, van Punta Lampa cao tot de Overveens Eilanden, het Eiland Formosa enz.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -107,7 +107,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.10/273.json/canvas/p1",
                     "@type": "sc:Canvas",
-                    "label": "273 - Kaart van een gedeelte der Chinesche Zee en Kust, van het Eiland Heitan tot de Provintie Nankin, een gedeelte van het Eiland Formosa en de Japansche Eilanden enz.",
+                    "label": "NL-HaNA_4.VEL_273 - 273 - Kaart van een gedeelte der Chinesche Zee en Kust, van het Eiland Heitan tot de Provintie Nankin, een gedeelte van het Eiland Formosa en de Japansche Eilanden enz.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -155,7 +155,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.10/274.json/canvas/p1",
                     "@type": "sc:Canvas",
-                    "label": "274 - Kaart van een gedeelte der Chinesche Zee en Kust, van Van Kampenshoek tot de Overveens Eilanden.",
+                    "label": "NL-HaNA_4.VEL_274 - 274 - Kaart van een gedeelte der Chinesche Zee en Kust, van Van Kampenshoek tot de Overveens Eilanden.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -203,7 +203,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.10/275.json/canvas/p1",
                     "@type": "sc:Canvas",
-                    "label": "275 - Kaart van de Rivier van Canton, van den Mond tot Anhingfu.",
+                    "label": "NL-HaNA_4.VEL_275 - 275 - Kaart van de Rivier van Canton, van den Mond tot Anhingfu.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -251,7 +251,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.10/276.json/canvas/p1",
                     "@type": "sc:Canvas",
-                    "label": "276 - Kaart van de Eilanden van Maccao, benevens de Mond der Rivier van Cantaon.",
+                    "label": "NL-HaNA_4.VEL_276 - 276 - Kaart van de Eilanden van Maccao, benevens de Mond der Rivier van Cantaon.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -299,7 +299,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.10/277.json/canvas/p1",
                     "@type": "sc:Canvas",
-                    "label": "277 - Kaart van de Eylanden van Maccao.",
+                    "label": "NL-HaNA_4.VEL_277 - 277 - Kaart van de Eylanden van Maccao.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -347,7 +347,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.10/278A-278B.json/canvas/p1",
                     "@type": "sc:Canvas",
-                    "label": "278A-278B - Kaart van de Eilanden en Klippen, gelegen voor de Kust van China, tusschen de Mandarynskap en het Eiland Songai.",
+                    "label": "NL-HaNA_4.VEL_278A - 278A-278B - Kaart van de Eilanden en Klippen, gelegen voor de Kust van China, tusschen de Mandarynskap en het Eiland Songai.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -395,7 +395,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.10/278A-278B.json/canvas/p2",
                     "@type": "sc:Canvas",
-                    "label": "278A-278B - Kaart van de Eilanden en Klippen, gelegen voor de Kust van China, tusschen de Mandarynskap en het Eiland Songai.",
+                    "label": "NL-HaNA_4.VEL_278B - 278A-278B - Kaart van de Eilanden en Klippen, gelegen voor de Kust van China, tusschen de Mandarynskap en het Eiland Songai.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -443,7 +443,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.10/279.json/canvas/p1",
                     "@type": "sc:Canvas",
-                    "label": "279 - Kaart van de Overveens Eylanden in China.",
+                    "label": "NL-HaNA_4.VEL_279 - 279 - Kaart van de Overveens Eylanden in China.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -491,7 +491,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.10/280.json/canvas/p1",
                     "@type": "sc:Canvas",
-                    "label": "280 - Affteyckeninghe van de ghelegentheyt van 't Eylandt Lamoo, aen de Cust van China ghelegen.",
+                    "label": "NL-HaNA_4.VEL_280 - 280 - Affteyckeninghe van de ghelegentheyt van 't Eylandt Lamoo, aen de Cust van China ghelegen.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -539,7 +539,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.10/281.json/canvas/p1",
                     "@type": "sc:Canvas",
-                    "label": "281 - Affteyckeningh van de Rivier van Cincheo aen de Cust van China, op de hooghte van 24 graden 15 minuten N.Br.",
+                    "label": "NL-HaNA_4.VEL_281 - 281 - Affteyckeningh van de Rivier van Cincheo aen de Cust van China, op de hooghte van 24 graden 15 minuten N.Br.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -587,7 +587,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.10/282.json/canvas/p1",
                     "@type": "sc:Canvas",
-                    "label": "282 - Affteycheninghe van de Bahia van Hantansouw, gelegen tusschen Lamo en de rivier van Chincheo.",
+                    "label": "NL-HaNA_4.VEL_282 - 282 - Affteycheninghe van de Bahia van Hantansouw, gelegen tusschen Lamo en de rivier van Chincheo.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -635,7 +635,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.10/283.json/canvas/p1",
                     "@type": "sc:Canvas",
-                    "label": "283 - Kaart van de reede en haven voor de Hocksiuwse rivier, leggende op 26 - 15 N.Br. enz.",
+                    "label": "NL-HaNA_4.VEL_283 - 283 - Kaart van de reede en haven voor de Hocksiuwse rivier, leggende op 26 - 15 N.Br. enz.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -683,7 +683,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.10/284.json/canvas/p1",
                     "@type": "sc:Canvas",
-                    "label": "284 - Kaart van het Noord-Oostelyk gedeelte van Japan en Jeso, het Statenland, Compagnieland enz., waarop de trek der reis van den Commandeur Fries, met de Castricum in 1643.",
+                    "label": "NL-HaNA_4.VEL_284 - 284 - Kaart van het Noord-Oostelyk gedeelte van Japan en Jeso, het Statenland, Compagnieland enz., waarop de trek der reis van den Commandeur Fries, met de Castricum in 1643.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -731,7 +731,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.10/285.json/canvas/p1",
                     "@type": "sc:Canvas",
-                    "label": "285 - Kaart der Japansche Eylanden, een gedeelte der Chineesche Kust, het Schiereiland Corea enz.",
+                    "label": "NL-HaNA_4.VEL_285 - 285 - Kaart der Japansche Eylanden, een gedeelte der Chineesche Kust, het Schiereiland Corea enz.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -779,7 +779,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.10/286.json/canvas/p1",
                     "@type": "sc:Canvas",
-                    "label": "286 - Kaart van Nippon en omliggende Eilanden.",
+                    "label": "NL-HaNA_4.VEL_286 - 286 - Kaart van Nippon en omliggende Eilanden.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -827,7 +827,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.10/287A-287B.json/canvas/p1",
                     "@type": "sc:Canvas",
-                    "label": "287A-287B - Aftekening van Zekere 4 \u00e0 5 stuks onbekende vaartuigen, dewelke zich omtrent Japan vertoond hebben enz.",
+                    "label": "NL-HaNA_4.VEL_287A - 287A-287B - Aftekening van Zekere 4 \u00e0 5 stuks onbekende vaartuigen, dewelke zich omtrent Japan vertoond hebben enz.",
                     "metadata": [
                         {
                             "label": "Label",
@@ -875,7 +875,7 @@
                 {
                     "@id": "https://data.globalise.huygens.knaw.nl/manifests/maps/4.VEL/B/B.3/B.3.10/287A-287B.json/canvas/p2",
                     "@type": "sc:Canvas",
-                    "label": "287A-287B - Aftekening van Zekere 4 \u00e0 5 stuks onbekende vaartuigen, dewelke zich omtrent Japan vertoond hebben enz.",
+                    "label": "NL-HaNA_4.VEL_287B - 287A-287B - Aftekening van Zekere 4 \u00e0 5 stuks onbekende vaartuigen, dewelke zich omtrent Japan vertoond hebben enz.",
                     "metadata": [
                         {
                             "label": "Label",
