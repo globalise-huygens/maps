@@ -683,12 +683,10 @@ def main(
 
 
 if __name__ == "__main__":
-    # Inventories
+    NA_EAD_FOLDER = "data/NA/ead"
 
-    for path in [
-        # data/NA/ead/4.AANW.xml data/NA/ead/4.AKF.xml data/NA/ead/4.BRF.xml data/NA/ead/4.JSF.xml data/NA/ead/4.MCAL.xml
-        "data/NA/ead/4.VEL.xml"
-    ]:
+    for f in os.listdir(NA_EAD_FOLDER):
+        path = os.path.join(NA_EAD_FOLDER, f)
 
         main(
             ead_file_path=path,
