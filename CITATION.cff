@@ -1,0 +1,42 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: GLOBALISE Early Modern Map Collection
+message: >-
+  If you use this dataset, please cite it using the metadata
+  from this file.
+type: dataset
+authors:
+  - given-names: Leon
+    name-particle: van
+    family-names: Wissen
+    email: l.vanwissen@uva.nl
+    affiliation: University of Amsterdam
+    orcid: 'https://orcid.org/0000-0001-8672-025X'
+  - name: GLOBALISE Project
+    website: 'https://globalise.huygens.knaw.nl/'
+repository-code: 'https://github.com/globalise-huygens/maps'
+abstract: >-
+  This repository is part of the GLOBALISE project, offering
+  access to colonial-era map collections from the Dutch
+  National Archive (and in future other heritage
+  institutions). These collections include significant maps
+  created during the 17th and 18th centuries, depicting
+  regions under Dutch colonial influence. The repository
+  provides scripts for preparing these maps for enrichment
+  by creating IIIF Manifests and Collections, making them
+  accessible for georeferencing, annotation, and further
+  research in the GLOBALISE project and beyond.
+  Additionally, the repository includes pilot projects for
+  automated enrichments of the maps. These are work in
+  progress.
+keywords:
+  - Dutch East India Company
+  - VOC Archives
+  - Early Modern Maps
+  - GLOBALISE
+  - Linked Open Data
+  - IIIF
+  - Annotations
+license: CC-BY-4.0
