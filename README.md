@@ -2,9 +2,9 @@
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
 
-This repository is part of the [**GLOBALISE project**](https://globalise.huygens.knaw.nl/), offering access to colonial-era map collections from the Dutch National Archive (and in future other heritage institutions). These collections include significant maps created during the 17th and 18th centuries, depicting regions under Dutch colonial influence.
+This repository is part of the [**GLOBALISE project**](https://globalise.huygens.knaw.nl/). It provides access to colonial-era map collections from the Dutch National Archive (and in future other heritage institutions). These collections include significant maps created during the 17th and 18th centuries, depicting regions under Dutch colonial influence.
 
-The repository provides scripts for preparing these maps for enrichment by creating IIIF Manifests and Collections, making them accessible for georeferencing, annotation, and further research in the GLOBALISE project and beyond. Additionally, the repository includes pilot projects for automated enrichments of the maps. These are work in progress.
+The repository provides scripts to prepare maps for annotation by creating IIIF Manifests and Collections, enabling georeferencing, addition of transcriptions, and thus facilitating further research in the GLOBALISE project and beyond. Additionally, the repository includes pilot projects for automated enrichments of the maps. These are work in progress.
 
 ## Overview
 
