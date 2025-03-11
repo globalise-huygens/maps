@@ -1,0 +1,255 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://example.org/3s7ea9r3tvm-m848j4vh",
+  "type": "Manifest",
+  "label": {
+    "en": [
+      "GLOBALISE Guest Lecture - University of the Philippines"
+    ]
+  },
+  "items": [
+    {
+      "id": "https://example.org/3s7ea9r3tvm-m848j4vh/canvas/lp6gkzeyz4-m848j9ul",
+      "type": "Canvas",
+      "height": 17271,
+      "width": 12116,
+      "label": {
+        "nl": [
+          "156.1.13 \"Philipijnse eijlanden\" (1:424.000)"
+        ]
+      },
+      "metadata": [
+        {
+          "label": {
+            "en": [
+              "Filename"
+            ]
+          },
+          "value": {
+            "en": [
+              "NL-HaNA_4.VELH_156.1.13"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://example.org/3s7ea9r3tvm-m848j4vh/canvas/lp6gkzeyz4-m848j9ul/annotation-page/g3xb0eek4m6-m848j9ul",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://example.org/3s7ea9r3tvm-m848j4vh/annotation/8r709csu4g2-m848j9uk",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://example.org/3s7ea9r3tvm-m848j4vh/canvas/lp6gkzeyz4-m848j9ul",
+              "body": {
+                "id": "https://service.archief.nl/iip/iipsrv?IIIF=/51/f6/0b/61/50/be/4a/c0/86/99/b7/43/f3/dd/4a/cf/2698faf0-a2bf-4518-be19-e8c18423899c.jp2/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 17271,
+                "width": 12116,
+                "service": [
+                  {
+                    "@context": "http://iiif.io/api/image/2/context.json",
+                    "protocol": "http://iiif.io/api/image",
+                    "width": 12116,
+                    "height": 17271,
+                    "sizes": [
+                      {
+                        "width": 94,
+                        "height": 134
+                      },
+                      {
+                        "width": 189,
+                        "height": 269
+                      },
+                      {
+                        "width": 378,
+                        "height": 539
+                      },
+                      {
+                        "width": 757,
+                        "height": 1079
+                      },
+                      {
+                        "width": 1514,
+                        "height": 2158
+                      },
+                      {
+                        "width": 3029,
+                        "height": 4317
+                      }
+                    ],
+                    "tiles": [
+                      {
+                        "width": 256,
+                        "height": 256,
+                        "scaleFactors": [
+                          1,
+                          2,
+                          4,
+                          8,
+                          16,
+                          32,
+                          64,
+                          128
+                        ]
+                      }
+                    ],
+                    "@id": "https://service.archief.nl/iip/iipsrv?IIIF=/51/f6/0b/61/50/be/4a/c0/86/99/b7/43/f3/dd/4a/cf/2698faf0-a2bf-4518-be19-e8c18423899c.jp2",
+                    "profile": [
+                      "http://iiif.io/api/image/2/level1",
+                      {
+                        "formats": [
+                          "jpg"
+                        ],
+                        "qualities": [
+                          "native",
+                          "color",
+                          "gray",
+                          "bitonal"
+                        ],
+                        "supports": [
+                          "regionByPct",
+                          "regionSquare",
+                          "sizeByForcedWh",
+                          "sizeByWh",
+                          "sizeAboveFull",
+                          "sizeUpscaling",
+                          "rotationBy90s",
+                          "mirroring"
+                        ],
+                        "maxWidth": 5000,
+                        "maxHeight": 5000
+                      }
+                    ],
+                    "id": "https://service.archief.nl/iip/iipsrv?IIIF=/51/f6/0b/61/50/be/4a/c0/86/99/b7/43/f3/dd/4a/cf/2698faf0-a2bf-4518-be19-e8c18423899c.jp2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://example.org/3s7ea9r3tvm-m848j4vh/canvas/gpakhstb0hg-m848kfu3",
+      "type": "Canvas",
+      "height": 10987,
+      "width": 12057,
+      "label": {
+        "nl": [
+          "156.2.24 \"Indiasche zee\" (1:350.000)"
+        ]
+      },
+      "metadata": [
+        {
+          "label": {
+            "en": [
+              "Filename"
+            ]
+          },
+          "value": {
+            "en": [
+              "NL-HaNA_4.VELH_156.2.24"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://example.org/3s7ea9r3tvm-m848j4vh/canvas/gpakhstb0hg-m848kfu3/annotation-page/tkhfqxq061h-m848kfu3",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://example.org/3s7ea9r3tvm-m848j4vh/annotation/vjv5akxmnxs-m848kfu2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://example.org/3s7ea9r3tvm-m848j4vh/canvas/gpakhstb0hg-m848kfu3",
+              "body": {
+                "id": "https://service.archief.nl/iip/iipsrv?IIIF=/3d/08/b0/75/d4/c8/42/b4/bd/35/c8/93/5b/6d/1b/7f/bdd2c9ac-130b-4de0-8761-e1ca0c0880de.jp2/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 10987,
+                "width": 12057,
+                "service": [
+                  {
+                    "@context": "http://iiif.io/api/image/2/context.json",
+                    "protocol": "http://iiif.io/api/image",
+                    "width": 12057,
+                    "height": 10987,
+                    "sizes": [
+                      {
+                        "width": 188,
+                        "height": 171
+                      },
+                      {
+                        "width": 376,
+                        "height": 343
+                      },
+                      {
+                        "width": 753,
+                        "height": 686
+                      },
+                      {
+                        "width": 1507,
+                        "height": 1373
+                      },
+                      {
+                        "width": 3014,
+                        "height": 2746
+                      }
+                    ],
+                    "tiles": [
+                      {
+                        "width": 256,
+                        "height": 256,
+                        "scaleFactors": [
+                          1,
+                          2,
+                          4,
+                          8,
+                          16,
+                          32,
+                          64
+                        ]
+                      }
+                    ],
+                    "@id": "https://service.archief.nl/iip/iipsrv?IIIF=/3d/08/b0/75/d4/c8/42/b4/bd/35/c8/93/5b/6d/1b/7f/bdd2c9ac-130b-4de0-8761-e1ca0c0880de.jp2",
+                    "profile": [
+                      "http://iiif.io/api/image/2/level1",
+                      {
+                        "formats": [
+                          "jpg"
+                        ],
+                        "qualities": [
+                          "native",
+                          "color",
+                          "gray",
+                          "bitonal"
+                        ],
+                        "supports": [
+                          "regionByPct",
+                          "regionSquare",
+                          "sizeByForcedWh",
+                          "sizeByWh",
+                          "sizeAboveFull",
+                          "sizeUpscaling",
+                          "rotationBy90s",
+                          "mirroring"
+                        ],
+                        "maxWidth": 5000,
+                        "maxHeight": 5000
+                      }
+                    ],
+                    "id": "https://service.archief.nl/iip/iipsrv?IIIF=/3d/08/b0/75/d4/c8/42/b4/bd/35/c8/93/5b/6d/1b/7f/bdd2c9ac-130b-4de0-8761-e1ca0c0880de.jp2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
